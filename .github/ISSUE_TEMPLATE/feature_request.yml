@@ -1,0 +1,36 @@
+name: "💡 我有个想法"
+description: "从真实使用场景出发，帮助下一版更方便。"
+title: "[建议] "
+labels: [enhancement, needs-triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 现在什么事情比较麻烦？
+      placeholder: "我每次……都需要……，尤其在……的时候。"
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 希望怎样改善？
+      placeholder: "如果能……，我就可以……"
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 这个场景多久遇到一次？
+      options: [几乎每天, 每周几次, 偶尔, 尚未使用但觉得有帮助]
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 目前的替代办法或参考（可选）
+      description: "可以分享公开链接，请勿上传他人的机密材料或未经授权的图片。"
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 提交前确认
+      options:
+        - label: "建议中没有个人求职资料、联系方式或 API Key。"
+          required: true

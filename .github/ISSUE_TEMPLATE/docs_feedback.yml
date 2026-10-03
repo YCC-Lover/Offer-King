@@ -1,0 +1,25 @@
+name: "📖 这段教程可以更清楚"
+description: "找不到入口、图片看不清或步骤过时，都可以告诉我们。"
+title: "[文档] "
+labels: [documentation, needs-triage]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 哪一页、哪一步？
+      placeholder: "例如快速上手第 3 步，或贴文档链接"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 哪句话或哪张图让你困惑？
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议怎样说明（可选）
+  - type: markdown
+    attributes:
+      value: "谢谢你让下一位使用者少走弯路。请勿粘贴密钥或私人资料。"

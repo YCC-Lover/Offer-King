@@ -1,0 +1,54 @@
+name: "🐛 遇到了问题"
+description: "告诉我们在哪一步卡住了，我们一起复现。"
+title: "[Bug] "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: "感谢反馈！这里对所有人公开。不要上传 API Key、完整备份、数据库、私人附件或未打码的求职信息。"
+  - type: input
+    id: version
+    attributes:
+      label: App 版本
+      description: "在“帮助与关于”中查看。"
+      placeholder: "例如 2.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: 使用环境
+      options: [Windows 11 x64, Windows 10 x64, 其他环境]
+    validations:
+      required: true
+  - type: input
+    id: display
+    attributes:
+      label: 窗口与字号（界面问题请填写）
+      placeholder: "例如最小窗口、App 字号 125%、Windows 缩放 150%"
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎样复现？
+      placeholder: "1. 打开哪个页面\n2. 点击什么\n3. 看到了什么"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望与实际结果
+      placeholder: "我希望……，实际却……"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 打码截图或脱敏错误提示（可选）
+      description: "先检查截图，不要包含真实薪酬、联系方式、密钥或私人路径。不要上传整个日志。"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: "我已检查已有 Issue，并移除本次反馈中的个人信息和密钥。"
+          required: true

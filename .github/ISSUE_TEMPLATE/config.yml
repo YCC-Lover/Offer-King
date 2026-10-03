@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "先看快速上手"
+    url: "https://github.com/YCC-Lover/Offer-King/blob/main/docs/QUICKSTART.md"
+    about: "从安装到第一份 Offer 的图文教程。"
+  - name: "下载与使用常见问题"
+    url: "https://github.com/YCC-Lover/Offer-King/blob/main/docs/FAQ.md"
+    about: "找不到 exe、升级、备份和 AI 配置的问题。"
+  - name: "安全问题请私密报告"
+    url: "https://github.com/YCC-Lover/Offer-King/security/advisories/new"
+    about: "不要在公开 Issue 中披露敏感信息。"

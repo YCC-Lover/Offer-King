@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.log
+*.exe
+*.zip
+*.asar
+*.map
+node_modules/
+.env
+.env.*
