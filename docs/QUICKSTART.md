@@ -6,7 +6,7 @@
 
 ## 1. 下载并安装
 
-打开 [Releases 发布页](https://github.com/YCC-Lover/Offer-King/releases/latest)，在 **Assets** 中选择 `Offer-King-Setup-2.0.0.exe`。不需要下载 `Source code` 压缩包，也不需要安装开发工具。
+[直接下载 Windows 2.0.0 安装包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe)，或打开 [Releases 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.0.0)，在 **Assets** 中选择 `Offer-King-Setup-2.0.0.exe`。下载不需要 GitHub 账号；不需要下载 `Source code` 压缩包，也不需要安装开发工具。
 
 本版面向 Windows 10 / 11 x64，应用最小窗口为 1100 × 700。手机浏览文档没问题，但目前没有可安装的手机版。
 
@@ -29,6 +29,8 @@ B1E426DBB5A748C2A54ACEE9EF7C878B6A938F7CA8DDEA440D51FC4D02886210
 哈希只能核对文件是否一致，不能代替可信来源与数字签名。其他版本应核对对应发布页，不能套用这个值。
 
 核对后，按安装向导完成安装。真实干净 Windows 环境中的首次安装和覆盖升级尚未完成验证；如果出现异常，请保留现状，不要清空应用数据。
+
+安装成功后就可以新建投递，不必先注册或配置 AI。第一次打开没有演示公司的记录，也不会包含作者的数据；跟着第 2 步添加自己的第一条投递即可。想使用 AI 时，再配置自己的密钥并了解相应费用。
 
 ### 已经用过旧版？先备份
 

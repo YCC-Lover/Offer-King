@@ -1,6 +1,10 @@
 # Offer King 2.0.0 · 早期试用版
 
-让每一份 Offer 都更值得。这个版本把投递跟进、Offer 对比和生活预算整理成一条更容易开始的路径。
+投递太多记不住，拿到 Offer 又难选择？Offer King 把投递跟进、薪资分析、双 Offer PK 和城市生活预算放在一起，帮你记录进度，也看清不同机会的差异。让每一份 Offer 都更值得。
+
+[下载 Windows 2.0.0 安装包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe) · [先看图文上手](https://github.com/YCC-Lover/Offer-King/blob/main/docs/QUICKSTART.md)
+
+无需 GitHub 或 App 账号，不用下载源码或安装开发工具。安装成功后就能手动管理投递、面试和 Offer；AI 可选，需要自己的密钥并可能产生费用。当前为未签名试用包，请先阅读下方安装提醒。
 
 ## 下载哪个文件？
 
@@ -38,3 +42,5 @@ B1E426DBB5A748C2A54ACEE9EF7C878B6A938F7CA8DDEA440D51FC4D02886210
 [图文上手](https://github.com/YCC-Lover/Offer-King/blob/main/docs/QUICKSTART.md) · [全部变化](https://github.com/YCC-Lover/Offer-King/blob/main/CHANGELOG.md) · [反馈入口](https://github.com/YCC-Lover/Offer-King/issues/new/choose)
 
 反馈请附上版本、操作步骤与脱敏截图，不要公开密钥、完整备份或私人资料。
+
+说明更新：2026-10-08，仅完善介绍与下载指引，未更换本版安装包或校验值。

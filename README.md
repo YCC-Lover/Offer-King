@@ -4,32 +4,40 @@
 
 ### 让每一份 Offer 都更值得。
 
-把投递进度、薪资待遇和城市生活放在一起，慢慢想清楚下一步。
+从第一条投递，到最后的选择。把进度记清楚，把 Offer 比明白。
 
 **Windows 10 / 11 · x64 · 本机保存 · 无需账号 · AI 可选**
 
-[下载 Windows 版](https://github.com/YCC-Lover/Offer-King/releases/latest) · [图文上手](docs/QUICKSTART.md) · [常见问题](docs/FAQ.md) · [提交反馈](https://github.com/YCC-Lover/Offer-King/issues/new/choose)
+[下载 Windows 安装包 · 2.0.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe) · [发布说明与校验文件](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.0.0) · [图文上手](docs/QUICKSTART.md) · [提交反馈](https://github.com/YCC-Lover/Offer-King/issues/new/choose)
 
 </div>
 
+投了很多公司，记不清面试进度？拿到几份 Offer，却纠结该选哪一个？**Offer King** 是一款把投递跟进和 Offer 决策放在一起的 Windows 求职助手：用看板整理进度，拆解薪资组成，结合自己填写的城市生活预算，再按你看重的成长、待遇和工作生活平衡做一次双 Offer PK。
+
+无需注册，不配置 AI 也能使用核心功能。你可以先留下一条投递，再随着面试进展慢慢补全信息；它帮你看清差异，最后的决定仍然交给你。
+
+> **下载前须知：** 当前为未签名的 2.0.0 早期试用版，面向 Windows 10 / 11 x64。请先看[安装与校验说明](docs/QUICKSTART.md#1-下载并安装)，升级前导出备份。干净 Windows 首装与覆盖升级尚未完整实测；遇到系统拦截不要关闭安全防护。
+
 ![Offer King 首页：集中查看 Offer、面试进度、待办与决策截止](docs/images/01-dashboard.png)
 
-> 图片中的公司、岗位与金额均为演示数据，不是真实求职记录。当前文档对应 **2.0.0**。
+图片中的公司、岗位与金额均为演示数据，不是真实求职记录。首次安装会从你自己的空白记录开始。
 
-## 你好，欢迎使用 Offer King
+## 下载后，能直接用吗？
 
-投了哪些公司？上次面试聊到哪一步？这份年包里，有多少是工资，有多少是奖金和股票？换一座城市之后，又能留下多少生活余地？
+安装成功后即可开始记录，不用下载源码，也不用安装 Node.js、Python 等开发工具。下载和使用 App 不需要 GitHub 账号。
 
-Offer King 是一款面向个人求职的 Windows 桌面工具。你可以先从一条投递开始，等信息逐渐完整，再比较条件、记录自己的取舍。不需要先搭表格，也不需要先配置 AI。
+- **手动记录就能用：** 投递看板、面试待办、薪酬分析、Offer 对比、城市预算和备份，不要求配置 AI。
+- **每个人一份资料：** 数据保存在各自电脑，不带作者的记录或密钥，也不会与朋友同步。
+- **AI 按需开启：** 使用时配置自己的 API Key，联网调用可能产生服务商费用，不影响你先用好本地功能。
 
-它负责帮你整理信息、看清差异；最后的决定，仍然交给你。
+[下载安装包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe) → [建立第一条投递](docs/QUICKSTART.md#2-建立第一条投递) → [做好备份](docs/QUICKSTART.md#8-做好备份再慢慢完善)
 
 ## 它能帮你做什么？
 
 | 你正在做的事 | 可以打开的页面 |
 | --- | --- |
 | 记住投了什么、下一次要做什么 | **首页 / 求职看板**：阶段卡片、待办与流程记录 |
-| 整理拿到的 Offer，不错过答复时间 | **我的 Offer**：收藏、决策状态、截止时间与个人最终选择 |
+| 整理拿到的 Offer，集中记录答复截止 | **我的 Offer**：收藏、决策状态、截止时间与个人最终选择 |
 | 在两份机会之间认真做个比较 | **Offer 对比**：双 Offer PK、自定义指标、权重、评分和备注 |
 | 看清工资、奖金、股票和签字费 | **薪资分析**：薪酬组成、常态年包与首年总包 |
 | 考虑换城市之后的生活 | **城市生活**：自己填写收入和支出，保存不同预算方案 |
@@ -51,7 +59,7 @@ Offer King 是一款面向个人求职的 Windows 桌面工具。你可以先从
 
 ## 下载与安装
 
-1. 前往 [Releases 发布页](https://github.com/YCC-Lover/Offer-King/releases/latest)，展开 **Assets**，选择 `Offer-King-Setup-2.0.0.exe`。页面上的 `Source code` 压缩包不是应用安装包。
+1. [下载 `Offer-King-Setup-2.0.0.exe`](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe)，或前往 [Releases 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.0.0) 的 **Assets** 下载同名文件及 `SHA256.txt`。页面上的 `Source code` 压缩包不是应用安装包。
 2. 安装前阅读 [安装与校验说明](docs/QUICKSTART.md#1-下载并安装)。旧用户请先在应用内导出 JSON 备份，再关闭旧版。
 3. 安装后打开 Offer King，点击“新增第一条投递”开始。无需注册，也不要求配置 AI。
 
@@ -91,16 +99,20 @@ Offer King 是一款面向个人求职的 Windows 桌面工具。你可以先从
 
 卡住了、发现显示问题，或者有一句“要是这里能……”——都欢迎留下来。
 
+觉得有用，欢迎把这个主页分享给正在找工作的朋友，或点一个 Star 留作收藏。想了解后续更新，可以在 GitHub 的 Watch 中订阅 Releases。提交反馈需要 GitHub 账号，但下载不需要。
+
 - [报告问题](https://github.com/YCC-Lover/Offer-King/issues/new?template=bug_report.yml)：说明怎么操作、原本期待什么、实际发生了什么。
 - [提出功能建议](https://github.com/YCC-Lover/Offer-King/issues/new?template=feature_request.yml)：讲讲你的使用场景，比只给一个功能名更有帮助。
 - [反馈文档问题](https://github.com/YCC-Lover/Offer-King/issues/new?template=docs_feedback.yml)：哪一步看不懂、哪个按钮找不到，都可以告诉我们。
 
 GitHub Issues 是公开的。截图前请遮住个人资料；不要上传 API Key、完整求职备份、附件或含私人路径的日志。应用内“帮助与关于”可以导出脱敏诊断，发送前仍建议自行检查。
 
-[更新记录](CHANGELOG.md) · [反馈指南](CONTRIBUTING.md) · [使用许可](LICENSE.md)
+[查看所有版本](https://github.com/YCC-Lover/Offer-King/releases) · [更新记录](CHANGELOG.md) · [反馈指南](CONTRIBUTING.md) · [使用许可](LICENSE.md)
 
 ---
 
 本仓库用于发布安装包、说明文档与接收反馈。**Offer King 为闭源软件，本仓库不提供应用源码，也不是开源项目。** 使用范围以许可文件为准，第三方组件遵循各自许可。
 
 愿你不仅拿到更多 Offer，也能更从容地选到适合自己的那一份。
+
+文档更新：2026-10-08。本次仅完善项目介绍与下载指引，应用版本和安装包仍为 2.0.0。

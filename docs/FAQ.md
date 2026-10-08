@@ -6,7 +6,17 @@
 
 ### 我应该下载哪个文件？
 
-在 [发布页](https://github.com/YCC-Lover/Offer-King/releases/latest) 的 **Assets** 中下载 Windows `.exe` 安装包。2.0.0 对应 `Offer-King-Setup-2.0.0.exe`；GitHub 的 `Source code` 压缩包不是应用安装包。
+可以[直接下载 Windows 2.0.0 安装包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe)，也可以在 [发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.0.0) 的 **Assets** 中选择 `Offer-King-Setup-2.0.0.exe`。GitHub 的 `Source code` 压缩包不是应用安装包。安装前请看下方安全提醒并核对 [SHA-256](QUICKSTART.md#安装前先核对)。
+
+### 下载后能直接使用吗？需要懂编程吗？
+
+不需要懂编程，也不需要下载源码或安装开发工具。在支持的 Windows x64 电脑上安装成功后，即可新建投递、记录面试、填写薪酬、比较 Offer、做城市预算和备份；不配置 AI 也能使用这些核心功能。
+
+第一次打开是自己的空白记录，不包含作者的求职资料或密钥。AI 是可选功能，使用时另行配置自己的 API Key，调用可能收费。当前安装包未签名，干净电脑上的首装仍未完整实测，不能保证每台电脑都安装成功。
+
+### 下载一定要注册 GitHub 吗？
+
+不需要。公开安装包和教程可以不登录 GitHub 下载、查看。提交 Issue、点 Star 或订阅更新才需要 GitHub 账号；App 本身没有注册或登录步骤。
 
 ### 支持哪些系统？
 
