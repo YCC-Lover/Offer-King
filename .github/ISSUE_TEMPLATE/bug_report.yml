@@ -11,7 +11,7 @@ body:
     attributes:
       label: App 版本
       description: "在“帮助与关于”中查看。"
-      placeholder: "例如 2.0.0"
+      placeholder: "例如 2.1.1"
     validations:
       required: true
   - type: dropdown

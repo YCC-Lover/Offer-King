@@ -1,12 +1,12 @@
 # Offer King 图文上手指南
 
-[返回首页](../README.md) · [常见问题](FAQ.md) · [数据与隐私](PRIVACY.md)
+[返回首页](../README.md) · [AI 配置指南](AI-SETUP.md) · [常见问题](FAQ.md) · [数据与隐私](PRIVACY.md)
 
-从记录第一条投递开始，不需要一次把所有内容填完。本指南对应 **2.0.0 / Windows x64**，图片使用演示数据；刚安装的应用会从你自己的空白记录开始。
+从记录第一条投递开始，不需要一次把所有内容填完。本指南对应 **2.1.1 / Windows x64**。现有截图来自 2.0.0，使用演示数据，核心页面仍可参考；新版 AI 设置以 [AI 配置指南](AI-SETUP.md) 为准。刚安装的应用会从你自己的空白记录开始。
 
 ## 1. 下载并安装
 
-[直接下载 Windows 2.0.0 安装包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe)，或打开 [Releases 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.0.0)，在 **Assets** 中选择 `Offer-King-Setup-2.0.0.exe`。下载不需要 GitHub 账号；不需要下载 `Source code` 压缩包，也不需要安装开发工具。
+[直接下载 Windows 2.1.1 安装包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.1.1/Offer-King-Setup-2.1.1.exe)，或打开 [Releases 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.1.1)，在 **Assets** 中选择 `Offer-King-Setup-2.1.1.exe`。下载不需要 GitHub 账号；不需要下载 `Source code` 压缩包，也不需要安装开发工具。
 
 本版面向 Windows 10 / 11 x64，应用最小窗口为 1100 × 700。手机浏览文档没问题，但目前没有可安装的手机版。
 
@@ -17,13 +17,13 @@
 在安装包所在文件夹打开 PowerShell，运行：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.0.0.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.1.1.exe'
 ```
 
-2.0.0 这一份安装包的大小为 **111,665,351 字节**，SHA-256 应为：
+2.1.1 这一份安装包的大小为 **111,775,641 字节**，SHA-256 应为：
 
 ```text
-B1E426DBB5A748C2A54ACEE9EF7C878B6A938F7CA8DDEA440D51FC4D02886210
+39166705E02DC7F2AF02D4228C1D50E871C0789C4A8EB07C7D4493A64B5BFEEE
 ```
 
 哈希只能核对文件是否一致，不能代替可信来源与数字签名。其他版本应核对对应发布页，不能套用这个值。
@@ -50,6 +50,8 @@ B1E426DBB5A748C2A54ACEE9EF7C878B6A938F7CA8DDEA440D51FC4D02886210
 同一家公司有多个岗位时，直接在“选择公司”中复用已有公司即可，不必为每个岗位重复建公司档案。
 
 **做完后检查：** 岗位详情能够打开，求职看板中也能找到对应卡片。这里不需要配置 AI。
+
+已配置 AI 且明确开启“创建岗位后自动调研”时，基础记录创建成功后才会调研一次。补全结果先进入可编辑草稿，**核对后仍需点击“保存全部更改”**；没有开启时，可在详情中手动点“开始联网补全”。AI 失败不会删除刚创建的投递。[完整操作说明](AI-SETUP.md#3-创建岗位后核对补全)
 
 ## 3. 让下一步有着落
 
@@ -152,9 +154,11 @@ JSON 包含已保存的求职记录、PK 和城市预算，但不包含 API Key�
 
 不配置 AI，也能使用记录、比较和备份。需要时再进入“设置与备份 → AI 调研”，配置你自己的密钥；不要把密钥发给其他人。
 
-公司综合调研与岗位 / 风险调研使用的服务不同，请按应用内对应说明配置。主动调研和连接测试都可能产生服务商费用，使用前先了解账户额度。AI 结果请查看来源并核实，不要直接当作事实。
+新用户可以使用“免费 AI 起步”：申请自己的 OpenRouter 和 Tavily 密钥，保存后分别测试模型与搜索。免费额度与账户计费由服务商控制，不承诺无限免费。自动调研默认关闭；想自动补全时再明确开启并保存。
 
-[了解 AI 会发送哪些信息 →](PRIVACY.md#2-哪些操作会联网)
+也可以保存兼容模型或本机 Ollama 配置，或继续使用原有百炼／DeepSeek。保存普通模型后还需明确选择使用范围；切换模型不会自动让它具备搜索能力。连接测试和调研都可能消耗额度，结果请查看来源并核实。
+
+[一步步配置 AI →](AI-SETUP.md) · [了解 AI 会发送哪些信息 →](PRIVACY.md#2-哪些操作会联网)
 
 ## 遇到问题怎么办？
 

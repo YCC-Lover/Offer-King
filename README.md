@@ -8,7 +8,7 @@
 
 **Windows 10 / 11 · x64 · 本机保存 · 无需账号 · AI 可选**
 
-[下载 Windows 安装包 · 2.0.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe) · [发布说明与校验文件](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.0.0) · [图文上手](docs/QUICKSTART.md) · [提交反馈](https://github.com/YCC-Lover/Offer-King/issues/new/choose)
+[下载 Windows 安装包 · 2.1.1](https://github.com/YCC-Lover/Offer-King/releases/download/v2.1.1/Offer-King-Setup-2.1.1.exe) · [发布说明与校验文件](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.1.1) · [图文上手](docs/QUICKSTART.md) · [AI 配置指南](docs/AI-SETUP.md) · [提交反馈](https://github.com/YCC-Lover/Offer-King/issues/new/choose)
 
 </div>
 
@@ -16,11 +16,24 @@
 
 无需注册，不配置 AI 也能使用核心功能。你可以先留下一条投递，再随着面试进展慢慢补全信息；它帮你看清差异，最后的决定仍然交给你。
 
-> **下载前须知：** 当前为未签名的 2.0.0 早期试用版，面向 Windows 10 / 11 x64。请先看[安装与校验说明](docs/QUICKSTART.md#1-下载并安装)，升级前导出备份。干净 Windows 首装与覆盖升级尚未完整实测；遇到系统拦截不要关闭安全防护。
+> **下载前须知：** 当前为未签名的 2.1.1 早期试用版，面向 Windows 10 / 11 x64。请先看[安装与校验说明](docs/QUICKSTART.md#1-下载并安装)，升级前导出备份。干净 Windows 首装与覆盖升级尚未完整实测；遇到系统拦截不要关闭安全防护。
 
 ![Offer King 首页：集中查看 Offer、面试进度、待办与决策截止](docs/images/01-dashboard.png)
 
-图片中的公司、岗位与金额均为演示数据，不是真实求职记录。首次安装会从你自己的空白记录开始。
+核心页面截图来自 2.0.0，仍可参考；下方 AI 预填截图来自 2.1.1。图片中的公司、岗位与金额均为演示数据，不是真实求职记录。首次安装会从你自己的空白记录开始。
+
+## 2.1.1 新版：少一些重复填写，多一些确认把关
+
+- **更容易开始用 AI：** 新增“免费 AI 起步”，按指南配置自己的 OpenRouter 模型密钥和 Tavily 搜索密钥；不内置共享密钥，也不承诺无限免费。
+- **公司＋岗位，开始补全：** 可选择在创建成功后自动调研，默认关闭。明确来源支持的空白资料先进入可编辑草稿，核对后点击保存；已有人工资料不会被悄悄覆盖。
+- **模型由你选择：** 保存多套 OpenAI 兼容 Chat Completions、Responses 或本机 Ollama 配置，分别用于公司、岗位和风险调研。兼容协议不代表任意模型都可用。
+- **核对更顺手：** 详情可直达 AI 设置并返回；切换详情标签保留当前建议，预填摘要显示待保存值、证据和来源，支持撤销。
+
+[从零配置 AI →](docs/AI-SETUP.md) · [查看完整新版说明 →](docs/RELEASE-2.1.1.md)
+
+![2.1.1 AI 预填：核对待保存值、来源与证据，再决定是否保存](docs/images/14-ai-prefill.png)
+
+AI 截图使用隔离测试环境和模拟响应，展示核对流程，不代表真实公司的调研结论或服务商实测结果。
 
 ## 下载后，能直接用吗？
 
@@ -30,7 +43,7 @@
 - **每个人一份资料：** 数据保存在各自电脑，不带作者的记录或密钥，也不会与朋友同步。
 - **AI 按需开启：** 使用时配置自己的 API Key，联网调用可能产生服务商费用，不影响你先用好本地功能。
 
-[下载安装包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe) → [建立第一条投递](docs/QUICKSTART.md#2-建立第一条投递) → [做好备份](docs/QUICKSTART.md#8-做好备份再慢慢完善)
+[下载安装包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.1.1/Offer-King-Setup-2.1.1.exe) → [建立第一条投递](docs/QUICKSTART.md#2-建立第一条投递) → [做好备份](docs/QUICKSTART.md#8-做好备份再慢慢完善)
 
 ## 它能帮你做什么？
 
@@ -42,6 +55,7 @@
 | 看清工资、奖金、股票和签字费 | **薪资分析**：薪酬组成、常态年包与首年总包 |
 | 考虑换城市之后的生活 | **城市生活**：自己填写收入和支出，保存不同预算方案 |
 | 汇总公司资料和需要核实的风险 | **公司库 / 职业分析 / 风险看板**：个人评分、资料与来源 |
+| 少填重复资料，先核对再保存 | **岗位详情 / AI 联网补全**：公开资料调研、空白字段预填与来源核对 |
 
 ### 不只是“哪个数字更大”
 
@@ -59,11 +73,11 @@
 
 ## 下载与安装
 
-1. [下载 `Offer-King-Setup-2.0.0.exe`](https://github.com/YCC-Lover/Offer-King/releases/download/v2.0.0/Offer-King-Setup-2.0.0.exe)，或前往 [Releases 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.0.0) 的 **Assets** 下载同名文件及 `SHA256.txt`。页面上的 `Source code` 压缩包不是应用安装包。
+1. [下载 `Offer-King-Setup-2.1.1.exe`](https://github.com/YCC-Lover/Offer-King/releases/download/v2.1.1/Offer-King-Setup-2.1.1.exe)，或前往 [Releases 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.1.1) 的 **Assets** 下载同名文件及 `SHA256.txt`。页面上的 `Source code` 压缩包不是应用安装包。
 2. 安装前阅读 [安装与校验说明](docs/QUICKSTART.md#1-下载并安装)。旧用户请先在应用内导出 JSON 备份，再关闭旧版。
 3. 安装后打开 Offer King，点击“新增第一条投递”开始。无需注册，也不要求配置 AI。
 
-**请先知道：2.0.0 是未签名的早期试用版本。** Windows 可能提示未知发布者；请核对来源和 SHA-256，遵循系统安全建议，不要关闭 Defender、SmartScreen 等防护。真实干净 Windows 环境中的首次安装与覆盖升级尚未完成验证，遇到拦截或异常请先停止并反馈。
+**请先知道：2.1.1 是未签名的早期试用版本。** Windows 可能提示未知发布者；请核对来源和 SHA-256，遵循系统安全建议，不要关闭 Defender、SmartScreen 等防护。真实干净 Windows 环境中的首次安装与覆盖升级尚未完成验证，遇到拦截或异常请先停止并反馈。
 
 当前提供 Windows x64 安装包；没有 macOS、Linux、Android 或 iOS 版，也没有自动更新功能。
 
@@ -79,7 +93,8 @@
 
 - 求职记录保存在本机；当前没有云同步、账号系统或遥测。
 - 核心记录、看板和比较功能不要求联网。公司官网图标会访问公开网站并缓存，所以“本机保存”不等于“绝不联网”。
-- AI 是可选功能，只有主动操作时才会调用。需要你自己的 API Key，模型服务商可能收费；连接测试也应按可能产生费用看待。
+- AI 是可选功能：手动发起，或在你明确开启后随新建岗位调研一次；默认不开启自动调研。需要你自己的 API Key，模型和搜索服务可能收费；连接测试也会访问对应服务。
+- 免费起步使用服务商提供的免费模型与搜索额度，额度、可用性和账户计费设置以服务商为准；失败时不会静默切换收费模型。普通模型能连接，不代表联网搜索已配置。[配置与费用边界](docs/AI-SETUP.md)
 - AI 调研按功能发送必要的公司 / 岗位信息，不上传联系人、私人备注、面试进度或附件内容。请勿把敏感内容填进公司名、岗位名或公开链接等调研字段。
 - API Key 使用 Windows 安全存储加密，不进入 JSON 备份。普通求职记录、草稿和导出的备份**不是加密保险箱**。
 - 附件只记录文件路径，JSON 备份不包含附件文件本身；换电脑时需要另外保管和迁移附件。
@@ -115,4 +130,4 @@ GitHub Issues 是公开的。截图前请遮住个人资料；不要上传 API K
 
 愿你不仅拿到更多 Offer，也能更从容地选到适合自己的那一份。
 
-文档更新：2026-10-08。本次仅完善项目介绍与下载指引，应用版本和安装包仍为 2.0.0。
+文档更新：2026-10-11。当前公开试用版：2.1.1。
