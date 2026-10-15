@@ -3,6 +3,9 @@ description: "从真实使用场景出发，帮助下一版更方便。"
 title: "[建议] "
 labels: [enhancement, needs-triage]
 body:
+  - type: markdown
+    attributes:
+      value: "先说使用场景，不必设计完整方案。提交前可搜索已有建议；请使用虚构示例，不公开个人求职资料。"
   - type: textarea
     id: problem
     attributes:
@@ -14,9 +17,8 @@ body:
     id: idea
     attributes:
       label: 希望怎样改善？
+      description: "可选；暂时没有解决方案也欢迎反馈。"
       placeholder: "如果能……，我就可以……"
-    validations:
-      required: true
   - type: dropdown
     id: frequency
     attributes:

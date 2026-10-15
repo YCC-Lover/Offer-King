@@ -3,6 +3,9 @@ description: "找不到入口、图片看不清或步骤过时，都可以告诉
 title: "[文档] "
 labels: [documentation, needs-triage]
 body:
+  - type: markdown
+    attributes:
+      value: "下载入口、教程步骤、AI 配置和文字错误都可以反馈。只需提供公开文档位置和卡住的地方，不需要粘贴自己的配置或求职资料。"
   - type: input
     id: page
     attributes:
@@ -20,6 +23,11 @@ body:
     id: suggestion
     attributes:
       label: 建议怎样说明（可选）
-  - type: markdown
+      placeholder: "例如希望补一张入口截图，或说明应该选择哪个文件。"
+  - type: checkboxes
+    id: privacy
     attributes:
-      value: "谢谢你让下一位使用者少走弯路。请勿粘贴密钥或私人资料。"
+      label: 提交前确认
+      options:
+        - label: "反馈中没有 API Key、实际 AI 请求、个人求职资料或未打码截图。"
+          required: true

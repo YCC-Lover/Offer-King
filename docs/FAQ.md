@@ -1,6 +1,6 @@
 # 常见问题
 
-[返回首页](../README.md) · [图文上手](QUICKSTART.md) · [AI 配置指南](AI-SETUP.md) · [数据与隐私](PRIVACY.md)
+[返回首页](../README.md) · [文档中心](README.md) · [图文上手](QUICKSTART.md) · [AI 配置指南](AI-SETUP.md) · [数据与隐私](PRIVACY.md)
 
 ## 下载与安装
 
