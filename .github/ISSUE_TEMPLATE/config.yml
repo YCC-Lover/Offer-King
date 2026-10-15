@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: "下载 2.2.0 候选试用版"
-    url: "https://github.com/YCC-Lover/Offer-King/releases/tag/v2.2.0"
-    about: "安装包、校验值与新版说明；真实首装、覆盖安装及卸载尚未验收。"
+    url: "https://github.com/YCC-Lover/Offer-King/blob/main/docs/DOWNLOAD.md"
+    about: "下载中心：系统要求、安装包、校验与升级；真实首装、覆盖安装及卸载尚未验收。"
   - name: "先看快速上手"
     url: "https://github.com/YCC-Lover/Offer-King/blob/main/docs/QUICKSTART.md"
     about: "下载安装、创建投递、保存与备份的图文教程。"

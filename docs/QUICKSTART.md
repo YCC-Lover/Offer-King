@@ -1,6 +1,6 @@
 # Offer King 图文上手指南
 
-[返回首页](../README.md) · [文档中心](README.md) · [功能导览](FEATURES.md) · [AI 配置指南](AI-SETUP.md) · [常见问题](FAQ.md) · [数据与隐私](PRIVACY.md)
+[返回首页](../README.md) · [下载中心](DOWNLOAD.md) · [文档中心](README.md) · [功能导览](FEATURES.md) · [AI 配置指南](AI-SETUP.md) · [常见问题](FAQ.md) · [数据与隐私](PRIVACY.md)
 
 从记录第一条投递开始，不需要一次把所有内容填完。本指南对应 **2.2.0 候选试用版 / Windows x64**。现有截图来自 2.0.0，使用演示数据，核心页面仍可参考；新版 AI 设置以 [AI 配置指南](AI-SETUP.md) 为准。刚安装的应用会从你自己的空白记录开始。
 
