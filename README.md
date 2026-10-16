@@ -8,16 +8,18 @@
 
 面向个人求职的 Windows 桌面助手：跟进面试，比较待遇，算好换城市后的生活预算。
 
-**Windows 10 / 11 · x64 · 本机保存 · 无需应用账号 · AI 可选**
+**Windows 10 / 11 · x64 · 四种界面语言 · 本机保存 · 无需应用账号 · AI 可选**
 
-**[↓ 下载 2.2.0 候选试用版](https://github.com/YCC-Lover/Offer-King/releases/download/v2.2.0/Offer-King-Setup-2.2.0.exe)**　·　[下载与校验](docs/DOWNLOAD.md)　·　[文档中心](docs/README.md)
+[简体中文](README.md) · [English](docs/i18n/en/README.md) · [日本語](docs/i18n/ja/README.md) · [한국어](docs/i18n/ko/README.md)
+
+**[↓ 下载 2.3.0 候选试用版](https://github.com/YCC-Lover/Offer-King/releases/download/v2.3.0/Offer-King-Setup-2.3.0.exe)**　·　[下载与校验](docs/DOWNLOAD.md)　·　[文档中心](docs/README.md)
 
 [界面预览](#界面预览) · [下载与版本](#下载与版本) · [快速开始](#快速开始) · [AI 配置](#ai-配置) · [常见问题](#常见问题) · [反馈与参与](#反馈与参与)
 
 </div>
 
 > [!IMPORTANT]
-> **2.2.0 为候选试用版（Pre-release），安装包未签名。真实干净 Windows 首装、覆盖安装和卸载尚未验收。** 旧用户升级前请导出 JSON 备份，另行保管附件原文件；遇到系统拦截不要关闭安全防护。[查看验证范围](docs/RELEASE-2.2.0.md#已验证与尚未验收)
+> **2.3.0 为候选试用版（Pre-release），支持四语界面切换。** 安装包未签名（NotSigned），真实干净 Windows 首装、覆盖安装和卸载尚未验收。旧用户升级前请导出 JSON 备份，另行保管附件原文件；遇到系统拦截不要关闭安全防护。[查看验证范围](docs/RELEASE-2.3.0.md#已验证与尚未验收)
 
 <a href="docs/FEATURES.md"><img src="docs/images/01-dashboard.png" alt="Offer King 首页：集中查看 Offer、面试进度和待办，图中均为合成演示资料"></a>
 
@@ -37,7 +39,7 @@
 
 <a href="docs/FEATURES.md#1-投递跟进下一步始终有着落"><img src="docs/images/03-board.png" alt="求职看板：岗位按面试阶段排列，各列独立滚动"></a>
 
-拖动卡片或选择阶段，打开详情查看流程。同一家公司可关联多个岗位，进度分别记录。2.2.0 的全部待办覆盖逾期、今天、未来七天、以后和待安排时间。[查看跟进功能 →](docs/FEATURES.md#1-投递跟进下一步始终有着落)
+拖动卡片或选择阶段，打开详情查看流程。同一家公司可关联多个岗位，进度分别记录。全部待办覆盖逾期、今天、未来七天、以后和待安排时间。[查看跟进功能 →](docs/FEATURES.md#1-投递跟进下一步始终有着落)
 
 ### 双 Offer PK：把个人取舍放到明面上
 
@@ -60,27 +62,41 @@
 
 *以上界面均来自 2.0.0 实际应用，金额、公司和评分为虚构演示数据。[版本及取景说明](docs/images/README.md)*
 
+### 四语界面：用自己熟悉的语言管理求职
+
+2.3.0 可在侧栏或显示设置中即时选择简体中文、English、日本語、한국어。正在编辑的内容会保留，公司、岗位和个人备注保持原文。
+
+[英语首页实拍](docs/images/17-english-ui.png) · [日本語ホーム](docs/images/18-japanese-ui.png) · [한국어 홈](docs/images/19-korean-ui.png) · [四语使用指南](docs/README.md)
+
+*以上多语言图来自 2.3.0 打包候选程序的独立合成环境，1400 × 900、100% 字号，采集时阻断外网；不是翻译重绘图，也不代表真实安装器已经验收。[截图来源](docs/images/README.md)*
+
 ## 下载与版本
 
-**当前候选：2.2.0 · Windows 10 / 11 x64 · 中文界面 · 约 106.6 MiB。**
+**当前候选：2.3.0 · Windows 10 / 11 x64 · 简体中文／English／日本語／한국어。** 安装包大小：**106.6 MiB**。
 
-**[下载安装包 .exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.2.0/Offer-King-Setup-2.2.0.exe)** · [SHA-256 校验文件](https://github.com/YCC-Lover/Offer-King/releases/download/v2.2.0/SHA256.txt) · [发布说明](docs/RELEASE-2.2.0.md)
+**[下载安装包 .exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.3.0/Offer-King-Setup-2.3.0.exe)** · [SHA-256 校验文件](https://github.com/YCC-Lover/Offer-King/releases/download/v2.3.0/SHA256.txt) · [发布说明](docs/RELEASE-2.3.0.md)
 
-完整下载选项、校验方法和升级步骤见 **[下载中心](docs/DOWNLOAD.md)**。GitHub 的 Latest 仍指向上一版 2.1.1；要试用 2.2.0，请使用上面的固定链接。`Source code` 压缩包只有本仓库文档，不能安装 App。
+完整下载选项、校验方法和升级步骤见 **[下载中心](docs/DOWNLOAD.md)**。GitHub 的 Latest 可能指向其他版本，请用上面的固定链接获取 2.3.0。`Source code` 压缩包只有本仓库文档，不能安装 App。
 
-**这一版重点改善了四件事：**
+**这一版新增多语言使用体验：**
+
+- **界面四语切换：** 侧栏或“设置与备份 → 显示与可读性”可选择简体中文、英语、日语、韩语，立即生效，本机记忆。
+- **编辑与原文保留：** 切换语言保留正在编辑的内容；公司、岗位、备注与人工阶段名称不会被翻译或改写。默认阶段只翻译显示，不改数据库中的原始名称。
+- **四语使用指南：** GitHub 首页、下载和 AI 配置分别提供三种新语言的独立说明。
+
+**同时保留 2.2.0 的日常功能：**
 
 - **待办看全：** 五组完整列表，完成事项后保留流程记录。
 - **草稿可恢复：** PK 与城市预算异常退出后可预览恢复，再核对保存。
 - **原文可提取：** 粘贴招聘介绍，按原文证据逐项采纳，明确标注未经联网核实。
 - **AI 可排查：** 一键检查已保存的岗位模型与搜索配置，确认费用后才测试。
 
-[查看 2.2.0 新功能实拍 →](docs/FEATURES.md#220-新增体验) · [全部更新记录 →](CHANGELOG.md) · [已测与待测范围 →](docs/RELEASE-2.2.0.md#已验证与尚未验收)
+[查看 2.3.0 语言与版本说明 →](docs/RELEASE-2.3.0.md) · [2.2.0 功能实拍 →](docs/FEATURES.md#220-新增体验) · [全部更新记录 →](CHANGELOG.md) · [已测与待测范围 →](docs/RELEASE-2.3.0.md#已验证与尚未验收)
 
 ## 快速开始
 
 1. **下载并校验。** 从[下载中心](docs/DOWNLOAD.md)取得安装包，核对校验值。无需 GitHub 账号或开发工具；候选版的安装验收状态见上方说明。
-2. **先记一条投递。** 填写公司、岗位、城市和阶段，保存后安排下一事项。不确定的资料以后再补。[图文操作 →](docs/QUICKSTART.md#2-建立第一条投递)
+2. **选好语言，再记一条投递。** 从侧栏或显示设置选择界面语言，填写公司、岗位、城市和阶段，保存后安排下一事项。不确定的资料以后再补。[图文操作 →](docs/QUICKSTART.md#2-建立第一条投递)
 3. **按需要补充比较。** 收到待遇信息后，再填薪酬、城市预算和个人评分。定期导出 JSON，并另存附件原文件。[备份方法 →](docs/QUICKSTART.md#8-做好备份再慢慢完善)
 
 已有旧版资料时，先备份再更新；安装后核对自己的记录。朋友各自从空白数据开始，使用自己的 AI 配置。
@@ -96,6 +112,13 @@
 AI 建议先核对、再保存。“创建岗位后自动调研”默认关闭，主动启用后才会在新岗位创建成功时调用。粘贴原文提取不等于联网核实。[AI 操作、费用与隐私边界 →](docs/AI-SETUP.md)
 
 ## 常见问题
+
+<details>
+<summary><strong>怎样选择英语、日语或韩语？会影响我的记录吗？</strong></summary>
+
+2.3.0 在侧栏和“设置与备份 → 显示与可读性”提供四种语言。切换立即生效，不需要重启，正在输入的内容也会保留。仅翻译应用界面；公司名、岗位名、备注、人工阶段名和已有 AI 调研原文保持原样。语言偏好只存在本机界面设置中，不进入求职 JSON 备份。已有 2.2.0 安装包仍是中文界面。
+
+</details>
 
 <details>
 <summary><strong>不配置 AI，能正常使用吗？</strong></summary>
@@ -125,7 +148,7 @@ API Key 在本机加密，不进入求职 JSON 备份。普通记录、恢复草
 <details>
 <summary><strong>支持手机、macOS、Linux 或自动更新吗？</strong></summary>
 
-目前提供 Windows 10 / 11 x64 中文安装包，没有其他平台安装版或自动更新。手机可以阅读本仓库文档；升级需手动下载并先备份。后续方向见 [ROADMAP](ROADMAP.md)，不代表上线时间承诺。
+目前提供 Windows 10 / 11 x64 安装包，2.3.0 支持四语界面；没有其他平台安装版或自动更新。手机可以阅读本仓库文档；升级需手动下载并先备份。后续方向见 [ROADMAP](ROADMAP.md)，不代表上线时间承诺。
 
 </details>
 
@@ -145,4 +168,4 @@ Issues 对所有人公开。请先打码，不要上传密钥、完整求职备�
 
 [文档中心](docs/README.md) · [所有版本](https://github.com/YCC-Lover/Offer-King/releases) · [后续方向](ROADMAP.md) · [使用许可](LICENSE.md) · [第三方声明](THIRD-PARTY-NOTICES.txt)
 
-本仓库提供安装包入口、说明文档和反馈渠道。**Offer King 为闭源软件，应用源码不在本仓库公开。** 当前候选版 2.2.0；文档更新：2026-10-15。
+本仓库提供安装包入口、说明文档和反馈渠道。**Offer King 为闭源软件，应用源码不在本仓库公开。** 当前候选版 2.3.0；文档更新：2026-10-16。
