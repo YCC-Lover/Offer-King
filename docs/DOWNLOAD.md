@@ -8,17 +8,19 @@
 
 ## Windows 下载
 
-### [下载 2.3.0 候选试用版 · Windows x64](https://github.com/YCC-Lover/Offer-King/releases/download/v2.3.0/Offer-King-Setup-2.3.0.exe)
+### [下载 2.4.0 候选试用版 · Windows x64](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/Offer-King-Setup-2.4.0.exe)
 
-大小：**111,824,372 字节／106.6 MiB** · [发布页与更新说明](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.3.0) · [安装后开始使用](QUICKSTART.md#2-建立第一条投递)
+大小：**111,979,180 字节／106.8 MiB** · 发布日期：**2026-10-18** · [发布页与更新说明](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.4.0) · [安装后开始使用](QUICKSTART.md#2-建立第一条投递)
 
-> **2.3.0 为支持四语切换的候选试用版（Pre-release）。** 安装包未签名（NotSigned），真实干净 Windows 首装、覆盖安装和卸载尚未验收。旧用户请先导出备份。[查看已测与待测范围](RELEASE-2.3.0.md#已验证与尚未验收)
+> **2.4.0 为候选试用版（Pre-release）。** 安装包未签名（NotSigned），真实干净 Windows 首装、覆盖安装和卸载尚未执行；跳过验收不等于通过。旧用户请先导出备份。[查看已测与待测范围](RELEASE-2.4.0.md#已验证与尚未验收)
+
+本版新增 **本机粘贴招聘信息识别** 和 **到手工资**：前者预览后只填选中的空白字段，不调用 AI；后者从人民币岗位带入工资，可自选城市与缴费参数。两者均本地运行、不联网、不计费；可选 AI 功能仍按各自服务商规则计费。[新版功能](FEATURES.md#240-新增体验)
 
 公开下载无需 GitHub 登录。以下三个文件都来自同一个固定版本发布页：
 
-- **[Offer-King-Setup-2.3.0.exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.3.0/Offer-King-Setup-2.3.0.exe)**：安装 App，下载后按安装向导操作。
-- **[SHA256.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.3.0/SHA256.txt)**：核对这份安装包的文件校验值。
-- **[START-HERE.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.3.0/START-HERE.txt)**：便于下载后离线查看的入门说明与反馈入口。
+- **[Offer-King-Setup-2.4.0.exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/Offer-King-Setup-2.4.0.exe)**：安装 App，下载后按安装向导操作。
+- **[SHA256.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/SHA256.txt)**：核对这份安装包的文件校验值。
+- **[START-HERE.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/START-HERE.txt)**：便于下载后离线查看的入门说明与反馈入口。
 
 GitHub 自动生成的 `Source code` 压缩包是本公开仓库的文档，不是安装包，也不包含应用源码。不要使用“Code → Download ZIP”来安装 App。
 
@@ -30,7 +32,7 @@ GitHub 自动生成的 `Source code` 压缩包是本公开仓库的文档，不�
 | 语言 | 简体中文、English、日本語、한국어；侧栏或显示设置中即时切换 |
 | 窗口 | 最小 1100 × 700；字号可在设置中调整为 90%–125% |
 | 安装 | Windows 安装程序；未提供便携版 |
-| 离线 | 无需应用账号，记录、比较与备份可离线使用 |
+| 离线 | 无需应用账号，记录、比较、备份、本机规则识别与到手工资可离线使用 |
 | AI | 可选；使用自己的模型和密钥，调用可能产生费用 |
 | 平台 | 尚无 macOS、Linux 或手机安装版 |
 
@@ -44,13 +46,13 @@ GitHub 自动生成的 `Source code` 压缩包是本公开仓库的文档，不�
 在安装包所在文件夹打开 PowerShell，运行：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.3.0.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.4.0.exe'
 ```
 
-2.3.0 文件大小应为 **111,824,372 字节**，SHA-256 应为：
+2.4.0 文件大小应为 **111,979,180 字节**，SHA-256 应为：
 
 ```text
-E3F0793EE439D6975C45CA566BBE07D077C62416F5753329C73435C2DC037463
+0670A784B88C53B51C959350012A3894428F5E561BB74D27DC8820200191604D
 ```
 
 哈希核对文件是否一致，不是数字签名或安全认证。不同版本需要核对各自发布页的值。
@@ -67,9 +69,9 @@ E3F0793EE439D6975C45CA566BBE07D077C62416F5753329C73435C2DC037463
 3. 确认接受候选试用范围后运行安装程序。启动新版，核对公司、岗位和 AI 配置状态，并继续保留升级前备份。
 4. 出现异常时保留现状并反馈，不要清空数据或用旧备份直接覆盖尚未检查的资料。
 
-版本设计保留原安装身份与数据位置；2.3.0 最终兼容性验证结果以本版发布说明为准，合成资料测试也不能代替真实安装器覆盖验收。JSON 不包含 API Key、未提交草稿或附件文件本身。换电脑需要另外迁移附件、重新配置自己的 AI 密钥。[完整备份说明](QUICKSTART.md#8-做好备份再慢慢完善)
+版本设计保留原安装身份与数据位置；2.4.0 最终兼容性验证结果以本版发布说明为准，合成资料测试也不能代替真实安装器覆盖验收。JSON 不包含 API Key、未提交草稿、临时工资试算或附件文件本身。换电脑需要另外迁移附件、重新配置自己的 AI 密钥。[完整备份说明](QUICKSTART.md#8-做好备份再慢慢完善)
 
-当前没有自动更新。GitHub 的 Latest 标记可能指向其他版本，也不代表本页的 2.3.0 已完成安装验收；请使用本页固定链接获取本候选版。
+当前没有 **App 自动更新或新版本推送**。请主动查看发布页，备份后手动下载新版；GitHub 的 Watch／订阅通知发生在 GitHub 或邮箱，不等于 App 内提醒，也不会替你安装。Latest 标记可能指向其他版本，不代表本页的 2.4.0 已完成安装验收；请使用本页固定链接。
 
 </details>
 
@@ -79,4 +81,4 @@ E3F0793EE439D6975C45CA566BBE07D077C62416F5753329C73435C2DC037463
 
 [图文上手](QUICKSTART.md) · [AI 配置与排错](AI-SETUP.md) · [数据与隐私](PRIVACY.md) · [常见问题](FAQ.md) · [反馈问题](../CONTRIBUTING.md)
 
-下载信息核对：2026-10-16。安装包身份与验证范围以 [2.3.0 发布说明](RELEASE-2.3.0.md)为准。
+下载信息核对：2026-10-18。安装包身份与验证范围以 [2.4.0 发布说明](RELEASE-2.4.0.md)为准。

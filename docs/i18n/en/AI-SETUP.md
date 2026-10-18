@@ -4,17 +4,24 @@
 
 [English home](README.md) · [Download](DOWNLOAD.md) · [Detailed Chinese guide](../../AI-SETUP.md)
 
-This guide describes the **2.3.0 candidate release**. Switch between Simplified Chinese, English, Japanese, and Korean in the sidebar or display settings; switching preserves current input and takes effect immediately. The installer is unsigned (NotSigned); real clean installation, upgrade installation, and uninstallation have not yet completed acceptance testing. [Download and verification](DOWNLOAD.md)
+This guide describes the **2.4.0 candidate release**. Switch between Simplified Chinese, English, Japanese, and Korean in the sidebar or display settings; switching preserves current input and takes effect immediately. The installer is unsigned (NotSigned); real clean installation, upgrade installation, and uninstallation have not yet completed acceptance testing. [Download and verification](DOWNLOAD.md) · [Release notes, in Chinese](../../RELEASE-2.4.0.md)
 
 The steps below include Chinese labels in addition to English descriptions so they can also be followed with older screenshots. Interface language changes do not translate your records or change your AI provider, key, model, search route, or billing consent.
 
 You can manage applications, tasks, offers, and backups without AI. AI is optional, uses your own accounts and keys, and may consume quota or incur charges. **No shared key or unlimited free service is included.**
 
+## Start without AI
+
+In **Add application → Paste a job posting**, use offline recognition to preview explicit company, role, city, links and salary fields, then choose which empty inputs to fill. Existing input and shared details of a reused company stay unchanged. Ambiguities are not guessed; amounts with no clear currency start unchecked. Complete text stays only in the window's memory and is not saved in recovery drafts or backups. This is not the AI text-extraction feature below: it needs no key or network access and incurs no AI fees.
+
+The **Take-home pay** page also runs locally without a model or AI fees. It estimates CNY pay for mainland Chinese residents over 12 fixed-salary months with the same employer from January. Choose any city and enter actual contribution bases/rates; only Beijing currently has a verified reference template, applied only on explicit request. Results do not write back to job compensation or city budgets, do not convert foreign currencies, and are estimates rather than payroll or tax advice.
+
 ## 1. Choose the task first
 
 | What you want | Configuration needed | Web search? |
 | --- | --- | --- |
-| Extract fields from a job description you paste | Compatible job model, or a prepared local Ollama model | No; Tavily is not required |
+| Recognize explicit fields before creating a job, or estimate take-home pay | None; local tools | No AI or network calls |
+| Use AI to extract more fields from a job description you paste | Compatible job model, or a prepared local Ollama model | No; Tavily is not required |
 | Research public company or job information | Compatible model plus your Tavily key, or the existing provider route | Yes; review the sources |
 | Keep local records, tasks, comparisons, and backups | None | No AI calls |
 
@@ -86,4 +93,6 @@ AI behavior has automated coverage with simulated responses; complete paid end-t
 
 [Privacy, in Chinese](../../PRIVACY.md) · [Report an issue without keys or private data](https://github.com/YCC-Lover/Offer-King/issues/new?template=bug_report.yml)
 
-Updated 2026-10-16 for the 2.3.0 candidate. Provider policies and charges are governed by the providers' current terms.
+The app has no automatic updater or in-app release push. Visit the [release page](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.4.0), back up, and download updates manually.
+
+Updated 2026-10-18 for the 2.4.0 candidate. Provider policies and charges are governed by the providers' current terms.
