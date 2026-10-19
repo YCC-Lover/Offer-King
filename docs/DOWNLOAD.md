@@ -1,84 +1,80 @@
-# 下载 Offer King
+# 下载 Offer King 2.5.4
 
 [简体中文](DOWNLOAD.md) · [English](i18n/en/DOWNLOAD.md) · [日本語](i18n/ja/DOWNLOAD.md) · [한국어](i18n/ko/DOWNLOAD.md)
 
 [项目首页](../README.md) · [文档中心](README.md) · [功能导览](FEATURES.md) · [AI 配置](AI-SETUP.md)
 
-**Windows 上的本地求职与 Offer 决策助手。** 安装后就能记录投递、安排面试、比较待遇；不需要开发工具、应用账号或 AI 账号。
+**候选试用版（Pre-release），无需应用账号；AI 可选。** 不设试用到期时间，不人为限制本地功能。每个人从自己的本机空数据开始，设备之间不自动同步。
 
-## Windows 下载
+> Windows 未正式数字签名；安卓带开发测试签名。真实 Windows 首装、覆盖安装和卸载，以及安卓真机安装、覆盖与使用均未验收。愿意接受这些限制再试用，升级前先导出 JSON。不要关闭系统安全防护或因签名冲突直接卸载旧应用。
 
-### [下载 2.4.0 候选试用版 · Windows x64](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/Offer-King-Setup-2.4.0.exe)
+## 选择你的平台
 
-大小：**111,979,180 字节／106.8 MiB** · 发布日期：**2026-10-18** · [发布页与更新说明](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.4.0) · [安装后开始使用](QUICKSTART.md#2-建立第一条投递)
+| 平台 | 固定 2.5.4 下载 | 大小／说明 |
+| --- | --- | --- |
+| Windows 10/11 x64 | [Offer-King-Setup-2.5.4.exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-Setup-2.5.4.exe) | 112,083,805 字节；NotSigned；NSIS 安装包 |
+| Android | [Offer-King-2.5.4-android-trial.apk](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-2.5.4-android-trial.apk) | 33,702,975 字节；Debug 签名；真机未验收 |
+| macOS / iOS / Linux | 暂无安装包 | 源码准备或另一平台编译成功，不等于已有可安装版本 |
 
-> **2.4.0 为候选试用版（Pre-release）。** 安装包未签名（NotSigned），真实干净 Windows 首装、覆盖安装和卸载尚未执行；跳过验收不等于通过。旧用户请先导出备份。[查看已测与待测范围](RELEASE-2.4.0.md#已验证与尚未验收)
+[固定发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.5.4) · [更新与实际验收范围](RELEASE-2.5.4.md)
 
-本版新增 **本机粘贴招聘信息识别** 和 **到手工资**：前者预览后只填选中的空白字段，不调用 AI；后者从人民币岗位带入工资，可自选城市与缴费参数。两者均本地运行、不联网、不计费；可选 AI 功能仍按各自服务商规则计费。[新版功能](FEATURES.md#240-新增体验)
+GitHub 的 Latest 可能仍指向旧正式标记；请使用本页固定链接。公开下载不要求 GitHub 登录，也不需要开发工具。`Source code` ZIP 仅是本公开仓库的文档，不是安装包或应用源码。
 
-公开下载无需 GitHub 登录。以下三个文件都来自同一个固定版本发布页：
+## 一起下载的说明与校验
 
-- **[Offer-King-Setup-2.4.0.exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/Offer-King-Setup-2.4.0.exe)**：安装 App，下载后按安装向导操作。
-- **[SHA256.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/SHA256.txt)**：核对这份安装包的文件校验值。
-- **[START-HERE.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/START-HERE.txt)**：便于下载后离线查看的入门说明与反馈入口。
+- [SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/SHA256SUMS.txt)：两个包、离线指南和测试摘要的校验值。
+- [START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/START-HERE.md)：可离线阅读、随安装包分享的上手与 AI 说明。
+- [TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/TEST-RESULTS.json)：实际通过、跳过和未验收范围，不含个人资料。
 
-GitHub 自动生成的 `Source code` 压缩包是本公开仓库的文档，不是安装包，也不包含应用源码。不要使用“Code → Download ZIP”来安装 App。
+### 安装前先核对
 
-## 这台电脑可以用吗？
-
-| 项目 | 当前版本 |
-| --- | --- |
-| 系统 | Windows 10 / 11，x64 |
-| 语言 | 简体中文、English、日本語、한국어；侧栏或显示设置中即时切换 |
-| 窗口 | 最小 1100 × 700；字号可在设置中调整为 90%–125% |
-| 安装 | Windows 安装程序；未提供便携版 |
-| 离线 | 无需应用账号，记录、比较、备份、本机规则识别与到手工资可离线使用 |
-| AI | 可选；使用自己的模型和密钥，调用可能产生费用 |
-| 平台 | 尚无 macOS、Linux 或手机安装版 |
-
-**首次使用：** 安装后从自己的空白资料开始，先[建立第一条投递](QUICKSTART.md#2-建立第一条投递)。AI 可以以后再配；安装包不含作者的记录或共享密钥。
-
-语言可随时切换，并在本机记住选择。正在编辑的输入不清空，公司、岗位、备注和人工阶段名保留原文；切换语言不代表翻译已有 AI 调研内容，也不更改模型或密钥配置。
-
-<details>
-<summary><strong>安装前核对文件与 Windows 提示</strong></summary>
-
-在安装包所在文件夹打开 PowerShell，运行：
-
-```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.4.0.exe'
-```
-
-2.4.0 文件大小应为 **111,979,180 字节**，SHA-256 应为：
+Windows 安装包 SHA-256：
 
 ```text
-0670A784B88C53B51C959350012A3894428F5E561BB74D27DC8820200191604D
+75b19b121a9736c2b46c62cca9e40333b4f4e8e92528b34d4a10bbe4e4de7a8d
 ```
 
-哈希核对文件是否一致，不是数字签名或安全认证。不同版本需要核对各自发布页的值。
+安卓 APK SHA-256：
 
-未签名的安装包可能出现“未知发布者”或 SmartScreen 提示。请确认下载来源，遵循系统安全建议；不要关闭 Defender、SmartScreen 等防护。无法确认或持续被拦截时先停止安装，再[反馈问题](https://github.com/YCC-Lover/Offer-King/issues/new?template=bug_report.yml)。
+```text
+85ca9c2f67be4ede787016e6b9487d50f359c7171b271afe8dfe022feceab89c
+```
 
-</details>
+在 Windows 下载目录可运行：
 
-<details>
-<summary><strong>已经使用旧版：备份与升级顺序</strong></summary>
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.5.4.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.5.4-android-trial.apk'
+```
 
-1. 在旧版“设置与备份”中手动导出 JSON，保存到自己能妥善保管的位置；附件原文件另外保管。
-2. 关闭旧版，保留原安装位置。不要为了更新先清空应用数据或卸载。
-3. 确认接受候选试用范围后运行安装程序。启动新版，核对公司、岗位和 AI 配置状态，并继续保留升级前备份。
-4. 出现异常时保留现状并反馈，不要清空数据或用旧备份直接覆盖尚未检查的资料。
+核对大小与对应哈希；哈希一致只证明文件匹配，不代替数字签名、安全认证或安装兼容性。Windows 可能提示未知发布者／SmartScreen，安卓也可能有来源或调试包提示。只使用可信来源，遵循系统安全建议；不要关闭 Defender、SmartScreen、Play Protect 等保护。无法确认或持续被阻止时先停止，保留旧版并[反馈](https://github.com/YCC-Lover/Offer-King/issues/new?template=bug_report.yml)。
 
-版本设计保留原安装身份与数据位置；2.4.0 最终兼容性验证结果以本版发布说明为准，合成资料测试也不能代替真实安装器覆盖验收。JSON 不包含 API Key、未提交草稿、临时工资试算或附件文件本身。换电脑需要另外迁移附件、重新配置自己的 AI 密钥。[完整备份说明](QUICKSTART.md#8-做好备份再慢慢完善)
+## 已有记录：先备份再升级
 
-当前没有 **App 自动更新或新版本推送**。请主动查看发布页，备份后手动下载新版；GitHub 的 Watch／订阅通知发生在 GitHub 或邮箱，不等于 App 内提醒，也不会替你安装。Latest 标记可能指向其他版本，不代表本页的 2.4.0 已完成安装验收；请使用本页固定链接。
+1. 在旧版“设置与备份”导出 JSON，确认文件存在并另存一份；附件原文件另行保管。
+2. 关闭旧版，不清空数据目录，不为了更新先卸载。
+3. Windows 保留原安装位置；设计上保留安装身份与数据，但真实覆盖安装未验收。升级后核对公司、岗位、附件和 AI 配置，再继续保管旧备份。
+4. 安卓签名不同不能直接覆盖。当前包沿用此前开发包的 Debug 身份，但没有手机覆盖实测；将来正式签名可能需要迁移。出现冲突先保留旧 App，不直接卸载。
+5. 跨设备导入 JSON 只迁移可支持的业务资料，不自动同步；AI 密钥不在备份中，桌面附件路径和手机文档授权不能直接互换，需在新设备重新选择。
 
-</details>
+## 第一次使用与语言
 
-## 分享与下一步
+安装成功后先用虚构资料验证“新增公司与岗位 → 保存 → 关闭重开 → 导出备份”，不用先配 AI。投递、比较、薪资试算等本地功能不要求应用账号或 AI 账号。
 
-把本页链接或安装包与指南分享给朋友即可。每个人的求职资料保存在各自电脑上，各自配置 AI 密钥；不要分享自己的数据目录、备份或密钥。
+界面提供简体中文、English、日本語、한국어，语言可即时切换并保留已有输入，公司、岗位、备注与 AI 原文不会自动翻译。Windows 最小窗口 1100×700，字号 90%–125%；这个桌面窗口要求不适用于安卓手机，手机真实体验仍待反馈。
 
-[图文上手](QUICKSTART.md) · [AI 配置与排错](AI-SETUP.md) · [数据与隐私](PRIVACY.md) · [常见问题](FAQ.md) · [反馈问题](../CONTRIBUTING.md)
+[Windows 图文上手](QUICKSTART.md) · [平台差异与 AI 设置](AI-SETUP.md) · [隐私](PRIVACY.md)
 
-下载信息核对：2026-10-18。安装包身份与验证范围以 [2.4.0 发布说明](RELEASE-2.4.0.md)为准。
+## 更新会自动发生吗？
+
+Windows 2.5.4 在启动及使用期间可自动检查固定 GitHub 发布源，每天最多一次，也可手动检查、忽略或关闭。只在找到适配平台、严格更新版本和允许渠道的安装文件后提醒，打开官方发布页；**不自动下载或安装，不后台常驻**。
+
+2.4.0 及更早公开版本没有该能力，需先手动升级一次。安卓 Debug 包不作为正式自动升级资产推荐。GitHub Watch 的通知来自 GitHub／邮箱，不会替你安装；不要把发布 Release 等同于给所有旧 App 推送。
+
+## 分享与未验收事项
+
+只分享所需平台的包、指南、校验清单和发布页，不分享项目、数据目录、备份或密钥。AI 使用自己的服务账户，免费额度与可用性由服务商决定；本地记录不因未配置 AI 而受限。
+
+已完成 1214 项单元／组件检查、Windows 打包程序冒烟与界面检查、安卓构建和静态验包；这些不替代真实首装、覆盖、卸载、安卓设备运行或真实付费 AI 验收。[完整已测／未测](RELEASE-2.5.4.md#已验证与尚未验收)
+
+核对日期：2026-10-19。

@@ -6,18 +6,18 @@
 
 ### Keep your applications on track. Make your next offer easier to choose.
 
-A Windows desktop companion for managing applications, preparing for interviews, comparing offers, and planning life in a new city.
+A local-first companion for managing applications, preparing for interviews, comparing offers, and planning life in a new city. Try the Windows desktop app or the Android development trial.
 
-**Windows 10 / 11 · x64 · Four interface languages · Local data · No app account required · Optional AI**
+**Windows 10 / 11 x64 + Android trial · Four interface languages · Local data · No app account required · Optional AI**
 
 [简体中文](../../../README.md) · **English** · [日本語](../ja/README.md) · [한국어](../ko/README.md)
 
-**[Download 2.4.0 candidate](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/Offer-King-Setup-2.4.0.exe)** · [Download guide](DOWNLOAD.md) · [AI setup](AI-SETUP.md)
+**[Windows 2.5.4 trial](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-Setup-2.5.4.exe)** · **[Android 2.5.4 trial](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-2.5.4-android-trial.apk)** · [Download guide](DOWNLOAD.md) · [AI setup](AI-SETUP.md)
 
 </div>
 
 > [!IMPORTANT]
-> **2.4.0 is a candidate release (Pre-release)** with Simplified Chinese, English, Japanese, and Korean. The installer is unsigned (**NotSigned**). Real clean installation, installation over an existing version, and uninstallation have **not yet completed acceptance testing**. Back up before trying an upgrade. [Release status, in Chinese](../../RELEASE-2.4.0.md#已验证与尚未验收)
+> **2.5.4 is a limited trial candidate (Pre-release).** Windows has no production code signature (**NotSigned**); Android uses a **Debug development/test signature**, not a production identity. Windows clean/upgrade installation and uninstallation, and Android real-device first installation, upgrade and runtime use, have **not completed acceptance testing**. Export a backup before upgrading. If Android reports a signature conflict, stop; do not simply uninstall the existing app. No macOS, iOS or Linux installer is available. [Release notes, in Chinese](../../RELEASE-2.5.4.md)
 
 ![Offer King 2.3.0 English dashboard with synthetic applications](../../images/17-english-ui.png)
 
@@ -42,9 +42,14 @@ A Windows desktop companion for managing applications, preparing for interviews,
 2. **Choose a language and save your first application.** Use the language selector in the sidebar or Settings & backup → Display & readability. In Add application, enter the company and role, or paste a job posting and review the offline recognition preview. Confirm the city and stage, choose an existing company when appropriate, then create the record. Add a next action when you know what comes next.
 3. **Add details as they become useful.** Record compensation, compare offers, and export a JSON backup regularly. Keep original attachment files separately.
 
-Language changes apply immediately and are remembered on this computer. Current edits remain in place; company names, job titles, notes, and custom stage names stay as written. Language settings are not part of job-data backups. AI can be configured later; local records, tasks, comparisons, and backups work without it. Older screenshots and the [detailed Chinese walkthrough](../../QUICKSTART.md) use Chinese labels.
+Language changes apply immediately and are remembered on this device. Current edits remain in place; company names, job titles, notes, and custom stage names stay as written. Language settings are not part of job-data backups. AI can be configured later; local records, tasks, comparisons, and backups work without it. Older screenshots and the [detailed Chinese walkthrough](../../QUICKSTART.md) use Chinese labels.
 
-## What is new in 2.4.0?
+## What is new in the 2.5.4 trial?
+
+- **A clearly labeled trial on two platforms:** Windows and Android show platform-specific signing and acceptance-test limits in Help. Android adds a native development trial with document access and company website icons; device behavior still needs testing.
+- **Windows release notifications:** with automatic checks enabled, the open, foreground app can check for a newer release once per day. You can also check manually and open the official release page. It never downloads or installs an update automatically. Users on 2.4.0 or earlier must first upgrade manually to get this feature. The Android Debug trial is not a production automatic-update recommendation.
+
+The local tools introduced in 2.4.0 remain available:
 
 - **Offline quick entry:** paste up to 50,000 characters for one company and role. Review recognized names, city, links, salary and supported job fields before filling empty inputs. Existing input and shared details of a reused company are not overwritten; ambiguous facts stay blank. Complete pasted text is memory-only, not part of recovery drafts or backups. No model, API key, internet access, or AI fees are needed.
 - **Take-home pay:** a local CNY estimate for mainland Chinese resident employees, assuming a fixed monthly salary for 12 months with the same employer from January. Enter any city and your actual contribution bases and rates; only Beijing currently has a verified reference template, and it is applied only when you explicitly choose it. See personal contributions, tax and monthly/annual net pay. Results are estimates, not payroll or tax advice, and never write back to the job or city budget. Foreign-currency jobs are not silently converted.
@@ -62,7 +67,7 @@ The everyday features introduced in 2.2.0 remain available:
 - **Extract pasted job descriptions:** review evidence-backed suggestions before adding them to a draft. This does not search the web or verify the source text.
 - **AI configuration checks:** check the saved job model and search route after confirming quota and possible costs.
 
-[Feature tour](../../FEATURES.md) · [Release notes](../../RELEASE-2.4.0.md) · [Changelog](../../../CHANGELOG.md)
+[Feature tour](../../FEATURES.md) · [Release notes](../../RELEASE-2.5.4.md) · [Changelog](../../../CHANGELOG.md)
 
 ## AI: choose when and how to use it
 
@@ -88,7 +93,7 @@ Yes. Local records, offline quick entry, take-home-pay estimates, application st
 
 No. The installer does not include the author's data or keys. Everyone starts with their own local records and configures their own services. Share the installer or project link, not your personal data folder or backups.
 
-API keys are encrypted on the local computer and excluded from job-data JSON backups. Records, recovery drafts, and backups are not an encrypted vault. Attachments are stored as file paths; backup files do not contain the attachment files themselves.
+API keys use the platform's local secure storage and are excluded from job-data JSON backups. Records, recovery drafts, and backups are not an encrypted vault. Windows attachments keep local file paths; mobile attachments use device-specific document authorization. Backup files do not contain the attachment files or transfer that authorization to another device.
 
 Cloud text extraction sends the text you paste to your selected model. The complete pasted text is kept only in the current window's memory; accepted fields and limited evidence excerpts can remain in drafts, records, and backups. Remove private information before submitting. [Privacy details, in Chinese](../../PRIVACY.md)
 
@@ -97,17 +102,17 @@ Cloud text extraction sends the text you paste to your selected model. The compl
 <details>
 <summary><strong>What languages and platforms are available?</strong></summary>
 
-The 2.4.0 candidate supports Simplified Chinese, English, Japanese, and Korean on Windows 10 / 11 x64. Switch from the sidebar or display settings; the preference is stored locally and takes effect immediately. Existing 2.2.0 downloads retain their Chinese interface. There are currently no macOS, Linux, mobile, portable, cloud-sync, or collaboration editions.
+The 2.5.4 candidate offers Simplified Chinese, English, Japanese, and Korean on Windows 10 / 11 x64 and in the Android development trial (Android 7.0+; real-device acceptance remains pending). Switch from the navigation or display settings; the preference is stored locally and takes effect immediately. The 1100 × 700 minimum window applies only to Windows, not to Android. There are no macOS, iOS or Linux installers, portable edition, cloud sync or collaboration.
 
 </details>
 
-There is **no automatic updater or in-app release push**. To update, visit the [2.4.0 release page](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.4.0), read its candidate limitations, back up, and download the installer manually. GitHub Watch notifications are separate from the app.
+Windows 2.5.4 includes **foreground release checks and an official-release-page button**, not automatic downloading or installation. Read the [2.5.4 release page](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.5.4), back up, and install manually. Version 2.4.0 and earlier need one manual upgrade before they can show the new notifications. For the Android Debug trial, follow the download guide manually; do not treat it as a production auto-update channel. GitHub Watch notifications are separate from the app.
 
 ## Feedback and sharing
 
 [Report a bug](https://github.com/YCC-Lover/Offer-King/issues/new?template=bug_report.yml) · [Suggest a feature](https://github.com/YCC-Lover/Offer-King/issues/new?template=feature_request.yml) · [Correct a translation](https://github.com/YCC-Lover/Offer-King/issues/new?template=docs_feedback.yml)
 
-English, Japanese, Korean, and Chinese feedback is welcome. Include your version, Windows version, steps, expected result, and actual result. For layout issues, add language, font size, theme, and Windows display scaling. Public Issues must not contain keys, complete backups, private attachments, or unredacted personal paths. [Feedback guide](../../../CONTRIBUTING.md) · [Private security reporting](../../../SECURITY.md)
+English, Japanese, Korean, and Chinese feedback is welcome. Include your app and operating-system version, steps, expected result, and actual result. For layout issues, add language, font size, theme, and desktop scaling or phone orientation. Public Issues must not contain keys, complete backups, private attachments, or unredacted personal paths. [Feedback guide](../../../CONTRIBUTING.md) · [Private security reporting](../../../SECURITY.md)
 
 If Offer King helps, you can Star the [project](https://github.com/YCC-Lover/Offer-King), share it with a friend, or use GitHub Watch → Releases for release notifications.
 
@@ -115,4 +120,4 @@ If Offer King helps, you can Star the [project](https://github.com/YCC-Lover/Off
 
 [中文文档中心](../../README.md) · [All releases](https://github.com/YCC-Lover/Offer-King/releases) · [License](../../../LICENSE.md) · [Third-party notices](../../../THIRD-PARTY-NOTICES.txt)
 
-Offer King is closed-source software. This public repository contains download links, documentation, and feedback channels, not the application source code. Documentation updated 2026-10-18.
+Offer King is closed-source software. This public repository contains download links, documentation, and feedback channels, not the application source code. Documentation updated 2026-10-19.

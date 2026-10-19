@@ -4,15 +4,15 @@
 
 [返回首页](../README.md) · [下载中心](DOWNLOAD.md) · [文档中心](README.md) · [功能导览](FEATURES.md) · [AI 配置指南](AI-SETUP.md) · [常见问题](FAQ.md) · [数据与隐私](PRIVACY.md)
 
-从记录第一条投递开始，不需要一次把所有内容填完。本指南对应 **2.4.0 候选试用版 / Windows x64**。本页现有截图来自 2.0.0，使用演示数据，未展示本轮新增面板；新版 AI 设置以 [AI 配置指南](AI-SETUP.md) 为准。刚安装的应用会从你自己的空白记录开始。
+从记录第一条投递开始，不需要一次把所有内容填完。本指南对应 **2.5.4 候选试用版 / Windows x64**。本页现有截图来自 2.0.0，使用演示数据，未展示本轮新增面板；新版 AI 设置以 [AI 配置指南](AI-SETUP.md) 为准。刚安装的应用会从你自己的空白记录开始。
 
 > **真实干净 Windows 首装与覆盖安装尚未验收。** 这是未签名的候选试用包（Pre-release），不是安装验收完成的正式版本。升级前先导出备份，遇到系统拦截不要关闭安全防护。
 
 ## 1. 下载并安装
 
-[直接下载 Windows 2.4.0 候选试用包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/Offer-King-Setup-2.4.0.exe)，或打开 [2.4.0 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.4.0)，在 **Assets** 中选择 `Offer-King-Setup-2.4.0.exe`、`SHA256.txt` 和 `START-HERE.txt`。下载不需要 GitHub 账号；不需要下载 `Source code` 压缩包，也不需要安装开发工具。[历史 2.3.0](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.3.0) 仍保留。
+[直接下载 Windows 2.5.4 候选试用包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-Setup-2.5.4.exe)，或打开 [2.5.4 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.5.4)，在 **Assets** 中选择 `Offer-King-Setup-2.5.4.exe`、`SHA256SUMS.txt` 和 `START-HERE.md`。下载不需要 GitHub 账号；不需要下载 `Source code` 压缩包，也不需要安装开发工具。[历史 2.3.0](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.3.0) 仍保留。
 
-本版面向 Windows 10 / 11 x64，应用最小窗口为 1100 × 700。手机浏览文档没问题，但目前没有可安装的手机版。
+本版面向 Windows 10 / 11 x64，应用最小窗口为 1100 × 700。本指南以 Windows 桌面操作为主；安卓已有 Debug 试用 APK，但手机真机首装、覆盖和运行均未验收，窗口尺寸要求不适用于安卓。[安卓下载与签名边界](DOWNLOAD.md)
 
 ### 安装前先核对
 
@@ -21,18 +21,18 @@
 在安装包所在文件夹打开 PowerShell，运行：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.4.0.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.5.4.exe'
 ```
 
-2.4.0 这一份候选试用包的大小为 **111,979,180 字节（约 106.8 MiB）**，SHA-256 应为：
+2.5.4 这一份候选试用包的大小为 **112,083,805 字节（约 106.9 MiB）**，SHA-256 应为：
 
 ```text
-0670A784B88C53B51C959350012A3894428F5E561BB74D27DC8820200191604D
+75b19b121a9736c2b46c62cca9e40333b4f4e8e92528b34d4a10bbe4e4de7a8d
 ```
 
 哈希只能核对文件是否一致，不能代替可信来源与数字签名。其他版本应核对对应发布页，不能套用这个值。
 
-确认接受候选试用范围后，按安装向导操作。真实首装、覆盖安装与卸载尚未执行；选择跳过验收不等于这些场景已经通过。如果出现异常，请保留现状，不要清空应用数据。详细范围见 [2.4.0 发布说明](RELEASE-2.4.0.md#已验证与尚未验收)。
+确认接受候选试用范围后，按安装向导操作。真实首装、覆盖安装与卸载尚未执行；选择跳过验收不等于这些场景已经通过。如果出现异常，请保留现状，不要清空应用数据。详细范围见 [2.5.4 发布说明](RELEASE-2.5.4.md#已验证与尚未验收)。
 
 安装成功后就可以新建投递，不必先注册或配置 AI。第一次打开没有演示公司的记录，也不会包含作者的数据；跟着第 2 步添加自己的第一条投递即可。想使用 AI 时，再配置自己的密钥并了解相应费用。
 
@@ -42,7 +42,7 @@ Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.4.0.exe'
 
 部分内部文件名仍沿用原名称，这是为保留原有数据兼容性；请不要自行改名或移动应用数据。
 
-当前没有 App 自动更新或新版本推送。以后请主动查看发布页，重复“备份 → 关闭旧版 → 下载新版 → 核对资料”的顺序；GitHub 订阅不是 App 内提醒。
+Windows 2.5.4 可在前台每天最多自动检查一次新版，也可手动检查、忽略或关闭；不会自动下载或安装。旧公开用户需先手动升级一次。更新仍遵循“备份 → 关闭旧版 → 下载新版 → 核对资料”；安卓 Debug 不作为正式自动更新资产，GitHub 订阅不是 App 内提醒。
 
 ## 2. 建立第一条投递
 

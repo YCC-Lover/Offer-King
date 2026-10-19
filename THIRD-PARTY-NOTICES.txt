@@ -572,3 +572,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+===== Android 2.5.4 development trial =====
+
+The Android APK also includes native notices in assets/native-third-party-notices.txt and corresponding source resources in assets/third-party-source/. These cover Capacitor/Android components, jsoup (MIT), and desugar_jdk_libs 2.1.5 (GPLv2 with the Classpath Exception). The latter is not described as Apache-licensed.
+
+The exact corresponding source archive for desugar_jdk_libs commit 73170c345e6a762fc6a1f0301bb15218850023ef is bundled unchanged in the APK (30,020,254 bytes; SHA-256 cf0b48cb046b6517ed8e2a816c125116a907e13e48e341882ba6f4016a155d9f). Existing complete upstream notices in the package are retained. This does not grant an open-source license for the Offer King application itself.

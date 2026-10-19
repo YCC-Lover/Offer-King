@@ -6,20 +6,20 @@
 
 ### 把投递进度记清楚，把 Offer 选择想明白。
 
-面向个人求职的 Windows 桌面助手：跟进面试，比较待遇，算好换城市后的生活预算。
+面向个人求职的本地助手：跟进面试，比较待遇，算好换城市后的生活预算。现提供 Windows 与安卓候选试用包。
 
-**Windows 10 / 11 · x64 · 四种界面语言 · 本机保存 · 无需应用账号 · AI 可选**
+**Windows x64 / Android 开发试用 · 四种界面语言 · 本机保存 · 无需应用账号 · AI 可选**
 
 [简体中文](README.md) · [English](docs/i18n/en/README.md) · [日本語](docs/i18n/ja/README.md) · [한국어](docs/i18n/ko/README.md)
 
-**[↓ 下载 2.4.0 候选试用版](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/Offer-King-Setup-2.4.0.exe)**　·　[下载与校验](docs/DOWNLOAD.md)　·　[文档中心](docs/README.md)
+**[↓ Windows 2.5.4 试用包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-Setup-2.5.4.exe)**　·　**[↓ 安卓试用 APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-2.5.4-android-trial.apk)**　·　[下载与校验](docs/DOWNLOAD.md)　·　[文档中心](docs/README.md)
 
 [界面预览](#界面预览) · [下载与版本](#下载与版本) · [快速开始](#快速开始) · [AI 配置](#ai-配置) · [常见问题](#常见问题) · [反馈与参与](#反馈与参与)
 
 </div>
 
 > [!IMPORTANT]
-> **2.4.0 为候选试用版（Pre-release）：少填几项，看清到手工资。** 安装包未签名（NotSigned），真实干净 Windows 首装、覆盖安装和卸载尚未验收；本轮跳过这项验收，不代表测试通过。旧用户升级前请导出 JSON 备份，另行保管附件原文件；遇到系统拦截不要关闭安全防护。[查看验证范围](docs/RELEASE-2.4.0.md#已验证与尚未验收)
+> **2.5.4 为候选试用版（Pre-release），不是已验收正式版。** Windows 未正式签名（NotSigned），安卓使用开发测试签名。真实 Windows 首装、覆盖安装和卸载，以及安卓真机安装、覆盖与使用尚未验收。升级前先导出 JSON；签名冲突不要直接卸载，不要关闭安全防护。[查看实际验证与未测事项](docs/RELEASE-2.5.4.md#已验证与尚未验收)
 
 <a href="docs/FEATURES.md"><img src="docs/images/01-dashboard.png" alt="Offer King 首页：集中查看 Offer、面试进度和待办，图中均为合成演示资料"></a>
 
@@ -33,7 +33,14 @@
 - **税前月薪究竟能到手多少：** 从岗位带入人民币月薪，自选城市、社保公积金基数与比例，查看 12 个月个税及到手估算；不改原岗位工资。
 - **换城市前想算清生活成本：** 输入自己的租房、通勤和日常预算，再比较预计现金储蓄。
 
-本地记录、看板、比较和备份无需 AI 或应用账号。适合在自己的 Windows 电脑上持续整理求职资料；目前没有手机端、云同步或多人协作。
+本地记录、看板、比较和备份无需 AI 或应用账号。可在 Windows 上持续整理资料，也可自愿尝试本版安卓开发包；手机实际兼容性仍待测试。各设备独立保存，没有云同步或多人协作。
+
+## 2.5.4：试用更清楚，Windows 更新有入口
+
+- **两个试用下载：** Windows x64 安装包与安卓 Debug APK；关于页顶部显示“小范围试用版”，不设到期时间，不人为限制本地功能。
+- **Windows 新版提醒：** 启动及使用期间每天最多自动检查一次，支持手动检查、关闭和忽略；只打开官方发布页，不自动下载或安装。2.4.0 及更早用户需先手动升级一次。
+- **安卓原生适配：** 本机记录、备份与原生安全配置、附件、AI、官网图标已有构建，未将编译通过表述为手机验收通过。Debug 包不作为正式自动升级资产推荐。
+- **AI 继续可选：** 用自己的密钥，普通模型与搜索分开配置；先看证据、采纳到草稿，再明确保存。[新版说明](docs/RELEASE-2.5.4.md) · [AI 指南](docs/AI-SETUP.md)
 
 ## 界面预览
 
@@ -91,32 +98,17 @@
 
 ## 下载与版本
 
-**当前候选：2.4.0 · Windows 10 / 11 x64 · 简体中文／English／日本語／한국어。** 安装包大小：**106.8 MiB**。
+**当前候选：2.5.4 · Windows x64 + Android 开发试用 · 中／英／日／韩界面。**
 
-**[下载安装包 .exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/Offer-King-Setup-2.4.0.exe)** · [SHA-256 校验文件](https://github.com/YCC-Lover/Offer-King/releases/download/v2.4.0/SHA256.txt) · [发布说明](docs/RELEASE-2.4.0.md)
+- [Windows 安装包 .exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-Setup-2.5.4.exe)：112,083,805 字节，未正式签名。
+- [安卓试用 APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-2.5.4-android-trial.apk)：33,702,975 字节，Debug 签名，未做真机验收。
+- [校验清单](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/SHA256SUMS.txt) · [离线指南](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/START-HERE.md) · [实际测试范围](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/TEST-RESULTS.json)
 
-完整下载选项、校验方法和升级步骤见 **[下载中心](docs/DOWNLOAD.md)**。GitHub 的 Latest 可能指向其他版本，请用上面的固定链接获取 2.4.0。`Source code` 压缩包只有本仓库文档，不能安装 App。
+完整系统要求、备份顺序、签名限制和 SHA-256 见 **[下载中心](docs/DOWNLOAD.md)**。Latest 可能仍指向旧正式标记，请使用固定 v2.5.4 链接；`Source code` ZIP 只是公开文档，不是安装包。暂不提供 Mac／iOS／Linux 安装包。
 
-**这一版新增：减少录入与到手工资。**
+继续保留本机招聘文字识别、到手工资、公司风险与排行、全部待办、草稿恢复、AI 原文提取、Offer 对比及城市预算。现有截图按原版本标注，不冒充安卓或本轮安装实拍。
 
-- **本机粘贴识别：** 招聘文字先预览、逐项勾选，只填空白字段；已有输入不覆盖，公司复用仍由你确认。完整原文仅留在当前窗口内存。
-- **独立到手工资页：** 手动输入或带入岗位月薪，自选城市及各项缴费基数、比例；可选北京参考模板，必须明确应用才生效。按中国大陆居民同一单位、自一月起固定 12 月试算，不是工资单或报税结果。
-- **原记录保持：** 试算不回写岗位，新增功能无需账号或 AI 密钥，不新增后台付费调用。
-
-**保留 2.3.0 的多语言使用体验：**
-
-- **界面四语切换：** 侧栏或“设置与备份 → 显示与可读性”可选择简体中文、英语、日语、韩语，立即生效，本机记忆。
-- **编辑与原文保留：** 切换语言保留正在编辑的内容；公司、岗位、备注与人工阶段名称不会被翻译或改写。默认阶段只翻译显示，不改数据库中的原始名称。
-- **四语使用指南：** GitHub 首页、下载和 AI 配置分别提供三种新语言的独立说明。
-
-**同时保留 2.2.0 的日常功能：**
-
-- **待办看全：** 五组完整列表，完成事项后保留流程记录。
-- **草稿可恢复：** PK 与城市预算异常退出后可预览恢复，再核对保存。
-- **原文可提取：** 粘贴招聘介绍，按原文证据逐项采纳，明确标注未经联网核实。
-- **AI 可排查：** 一键检查已保存的岗位模型与搜索配置，确认费用后才测试。
-
-[查看 2.4.0 功能与版本说明 →](docs/RELEASE-2.4.0.md) · [2.2.0 功能实拍 →](docs/FEATURES.md#220-新增体验) · [全部更新记录 →](CHANGELOG.md) · [已测与待测范围 →](docs/RELEASE-2.4.0.md#已验证与尚未验收)
+[2.5.4 新功能与未验收事项](docs/RELEASE-2.5.4.md) · [全部更新记录](CHANGELOG.md)
 
 ## 快速开始
 
@@ -142,7 +134,7 @@ AI 建议先核对、再保存。“创建岗位后自动调研”默认关闭�
 <details>
 <summary><strong>发布新版后，已经安装的 App 会自动提醒或升级吗？</strong></summary>
 
-当前 2.4.0 和之前版本没有 App 内版本检查、推送提醒或自动下载安装。请主动查看[下载中心](docs/DOWNLOAD.md)，备份后下载新版并按说明更新；仅下载 App 不会自动订阅通知。GitHub 用户可在仓库 Watch 中订阅 Releases，通知取决于 GitHub 账号设置，不是 App 内弹窗。未来若增加提醒功能，旧用户也需要先手动升级一次到带提醒能力的版本。
+Windows 2.5.4 已提供前台新版检查，自动检查每天最多一次，可关闭或手动触发，只打开固定官方发布页，不自动下载安装。2.4.0 及更早版本需先手动升级一次，发布 Release 不会给旧 App 自动添加能力。安卓 Debug 包不作为正式升级资产推荐；GitHub Watch 通知也不等于 App 内提醒。[更新说明](docs/DOWNLOAD.md)
 
 </details>
 
@@ -170,9 +162,9 @@ AI 建议先核对、再保存。“创建岗位后自动调研”默认关闭�
 <details>
 <summary><strong>资料保存在什么地方，朋友会看到我的记录吗？</strong></summary>
 
-资料保存在各自电脑，安装包不包含作者的求职记录或密钥，目前没有云同步与遥测。分享安装包或项目链接即可，不要分享个人资料目录。
+资料保存在各自设备，安装包不包含作者的求职记录或密钥，目前没有云同步与遥测。分享安装包或项目链接即可，不要分享个人资料目录。
 
-API Key 在本机加密，不进入求职 JSON 备份。普通记录、恢复草稿和备份不是加密保险箱；附件仅保存路径，备份不包含附件文件。本机自动备份和恢复草稿也不能代替独立保管的正式备份。
+API Key 在本机加密，不进入求职 JSON 备份。普通记录、恢复草稿和备份不是加密保险箱；Windows 附件记录路径，安卓记录系统文档授权关联，不复制正文。备份不包含附件原文件，换设备后需重新选择。本机自动备份和恢复草稿也不能代替独立保管的正式备份。
 
 公司官网图标与主动 AI 功能可能联网。云端原文提取会发送粘贴文字，完整原文只在窗口内存保留，**已采纳字段与有限证据摘录可进入草稿、记录和备份**；提交前请移除敏感内容。[数据与隐私](docs/PRIVACY.md)
 
@@ -181,7 +173,7 @@ API Key 在本机加密，不进入求职 JSON 备份。普通记录、恢复草
 <details>
 <summary><strong>支持手机、macOS、Linux 或自动更新吗？</strong></summary>
 
-目前提供 Windows 10 / 11 x64 安装包，2.4.0 保留四语界面；没有其他平台安装版或自动更新。手机可以阅读本仓库文档；升级需手动下载并先备份。后续方向见 [ROADMAP](ROADMAP.md)，不代表上线时间承诺。
+本版提供 Windows 10 / 11 x64 安装包与安卓开发试用 APK，均为候选。暂无 macOS、iOS 或 Linux 安装包。Windows 有可选新版提醒，但不自动安装；安卓签名与真机边界请看下载中心。后续方向见 [ROADMAP](ROADMAP.md)，不代表上线承诺。
 
 </details>
 
@@ -201,4 +193,4 @@ Issues 对所有人公开。请先打码，不要上传密钥、完整求职备�
 
 [文档中心](docs/README.md) · [所有版本](https://github.com/YCC-Lover/Offer-King/releases) · [后续方向](ROADMAP.md) · [使用许可](LICENSE.md) · [第三方声明](THIRD-PARTY-NOTICES.txt)
 
-本仓库提供安装包入口、说明文档和反馈渠道。**Offer King 为闭源软件，应用源码不在本仓库公开。** 当前候选版 2.4.0；文档更新：2026-10-18。
+本仓库提供安装包入口、说明文档和反馈渠道。**Offer King 为闭源软件，应用源码不在本仓库公开。** 当前候选版 2.5.4；文档更新：2026-10-19。
