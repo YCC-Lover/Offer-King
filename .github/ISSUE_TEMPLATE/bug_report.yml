@@ -1,84 +1,94 @@
-name: "🐛 遇到了问题"
-description: "安装、界面、记录、AI 等问题；补充项仅在相关时填写。"
+name: "🐛 遇到了问题 / Bug report"
+description: "Windows / Android 的安装、界面、记录或 AI 问题。中文或 English 均可；补充项可留空。"
 title: "[Bug] "
 labels: [bug, needs-triage]
 body:
   - type: markdown
     attributes:
-      value: "感谢反馈！这里对所有人公开。不要上传 API Key、实际 AI 请求、完整备份、数据库、原始招聘资料、私人附件或未打码的求职信息。2.2.0 是候选试用版，真实首装、覆盖安装及卸载尚未验收；不要为排错关闭安全防护或清空数据。"
+      value: |
+        中文或 English 均可。这里对所有人公开；不要上传 API Key、实际 AI 请求、备份、数据库、私人附件、原文、未打码截图或设备唯一标识。当前为候选试用版：Windows 未正式签名，Android 使用开发测试签名；Windows 安装器首装／覆盖／卸载和安卓真机使用尚未验收。不要为排错关闭防护、卸载旧 App 或清空数据。
+
+        English reports are welcome. This form is public. Never share keys, private records, backups, raw requests, attachments or device identifiers. Windows is not formally signed; Android uses a development/test certificate. Real installation/device acceptance is incomplete. Please keep security protections and existing data intact. For vulnerabilities, use [private security reporting](https://github.com/YCC-Lover/Offer-King/security/advisories/new).
   - type: dropdown
     id: category
     attributes:
-      label: 问题类型（可选）
+      label: 问题类型 / Category (optional)
       options:
-        - 安装或升级
-        - 界面、字体或滚动
-        - 记录、保存或备份
-        - AI 配置、调研或原文提取
-        - 其他或不确定
+        - 安装或升级 / Installation or upgrade
+        - 界面、字体或滚动 / Interface or scrolling
+        - 记录、保存或备份 / Records or backup
+        - AI 配置、调研或原文提取 / AI
+        - 安卓附件或前后台 / Android attachments or lifecycle
+        - 其他或不确定 / Other or unsure
   - type: input
     id: version
     attributes:
-      label: App 版本
-      description: "在“帮助与关于”中查看；无法打开 App 时填写下载的安装包版本。"
-      placeholder: "例如 2.2.0 候选试用版"
+      label: App 版本 / App version
+      description: "在“帮助与关于”中查看；无法打开时填下载的包版本，不清楚可写“未知”。Check Help & About or the downloaded file; unknown is acceptable."
+      placeholder: "例如 2.5.4 候选试用版 / e.g. 2.5.4 trial"
     validations:
       required: true
   - type: dropdown
-    id: windows
+    id: platform
     attributes:
-      label: 使用环境
-      options: [Windows 11 x64, Windows 10 x64, 其他环境]
+      label: 使用平台 / Platform
+      options: [Windows 11 x64, Windows 10 x64, Android 开发试用 / Android trial, 其他或不确定 / Other or unsure]
     validations:
       required: true
+  - type: input
+    id: system_version
+    attributes:
+      label: 系统版本与机型 / OS version and model (optional)
+      description: "仅在相关时写系统版本、品牌／机型；不要填序列号、IMEI、广告 ID、账号或设备唯一标识。Optional OS version/brand/model only; no serial, IMEI, advertising ID or account."
+      placeholder: "例如 Android 16、品牌／机型；或 Windows 11 版本号。不清楚可留空。"
   - type: input
     id: display
     attributes:
-      label: 窗口与字号（可选，仅界面问题填写）
-      placeholder: "例如最小窗口、App 字号 125%、Windows 缩放 150%、深色主题"
+      label: 语言、显示与字号 / Language and display (optional)
+      placeholder: "例如中文、App 125%、深色；电脑窗口／系统缩放，或手机横竖屏／键盘遮挡。e.g. English, 125%, portrait."
   - type: dropdown
     id: install_method
     attributes:
-      label: 安装方式（可选，仅安装或升级问题填写）
+      label: 安装方式 / Installation (optional)
       options:
-        - 这台电脑首次安装
-        - 使用新版安装包覆盖旧版
-        - 其他或不确定
+        - 此设备首次安装 / First install on this device
+        - 使用新版包覆盖旧版 / Upgrade over an existing install
+        - 其他或不确定 / Other or unsure
   - type: input
     id: previous_version
     attributes:
-      label: 升级前版本（可选，仅覆盖安装问题填写）
-      placeholder: "例如 2.1.1；不清楚可以留空"
+      label: 升级前版本 / Previous app version (optional)
+      placeholder: "填写原版本；不清楚可留空 / Previous version if known"
   - type: textarea
     id: ai_setup
     attributes:
-      label: AI 配置概况（可选，仅 AI 问题填写）
+      label: AI 配置概况 / AI setup (optional)
       description: "只写服务商、协议、模型名和是否使用搜索，不贴密钥、完整接口地址、请求头／请求体、原始资料或完整模型返回。不确定的项可以留空。"
       placeholder: "操作：粘贴招聘原文 / 岗位联网补全 / 公司或风险调研 / 一键检查\n服务商与模型：……\n协议：Chat Completions / Responses / Ollama / 原有百炼或 DeepSeek\n联网来源：Tavily / 原有 DeepSeek / 不需要搜索\n一键检查失败步骤（如果已经检查）：……"
   - type: textarea
     id: steps
     attributes:
-      label: 怎样复现？
-      description: "优先用虚构公司和岗位描述。不稳定出现也可以写最近一次的步骤；不要为了反馈反复付费调用 AI。"
+      label: 怎样复现？ / Steps to reproduce
+      description: "用虚构资料描述最近一次即可；不要为了反馈反复付费调用 AI。Use synthetic examples and the latest occurrence; no repeated paid calls are needed."
       placeholder: "1. 打开哪个页面\n2. 点击什么\n3. 看到了什么\n出现频率：每次 / 偶尔 / 仅一次"
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: 期望与实际结果
-      placeholder: "我希望……，实际却……"
+      label: 期望与实际结果 / Expected and actual result
+      placeholder: "我希望……，实际却…… / I expected …, but …"
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: 打码截图或脱敏错误提示（可选）
+      label: 打码截图或错误码 / Redacted screenshot or error code (optional)
       description: "优先提供页面上的脱敏错误提示或错误码。先检查截图，不要包含真实薪酬、联系方式、密钥、完整接口地址或私人路径。不要上传整个日志或实际 AI 请求。"
   - type: checkboxes
     id: checks
     attributes:
-      label: 提交前确认
+      label: 提交前确认 / Before submitting
       options:
-        - label: "我已检查已有 Issue，并移除本次反馈中的个人信息和密钥。"
+        - label: "我已检查已有 Issue，并移除个人信息、密钥与设备唯一标识。I checked existing issues and removed personal data, keys and device identifiers."
           required: true

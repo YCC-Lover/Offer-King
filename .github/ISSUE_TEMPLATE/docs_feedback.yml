@@ -1,33 +1,33 @@
-name: "📖 这段教程可以更清楚"
-description: "找不到入口、图片看不清或步骤过时，都可以告诉我们。"
+name: "📖 教程可以更清楚 / Documentation"
+description: "找不到入口、图片看不清或步骤过时。中文或 English 均可；a short description is enough."
 title: "[文档] "
 labels: [documentation, needs-triage]
 body:
   - type: markdown
     attributes:
-      value: "下载入口、教程步骤、AI 配置和文字错误都可以反馈。只需提供公开文档位置和卡住的地方，不需要粘贴自己的配置或求职资料。"
+      value: "中文或 English 均可。提供公开文档位置和卡住的地方即可，不需要粘贴自己的配置或求职资料。English feedback is welcome: share the public page and confusing step, never keys, private records or raw requests."
   - type: input
     id: page
     attributes:
-      label: 哪一页、哪一步？
-      placeholder: "例如快速上手第 3 步，或贴文档链接"
+      label: 哪一页、哪一步？ / Page and step
+      placeholder: "例如快速上手第 3 步，或贴公开文档链接 / Public page URL and step"
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: 哪句话或哪张图让你困惑？
+      label: 哪句话或哪张图让你困惑？ / What is unclear?
     validations:
       required: true
   - type: textarea
     id: suggestion
     attributes:
-      label: 建议怎样说明（可选）
+      label: 建议怎样说明 / Suggested explanation (optional)
       placeholder: "例如希望补一张入口截图，或说明应该选择哪个文件。"
   - type: checkboxes
     id: privacy
     attributes:
-      label: 提交前确认
+      label: 提交前确认 / Before submitting
       options:
-        - label: "反馈中没有 API Key、实际 AI 请求、个人求职资料或未打码截图。"
+        - label: "反馈中没有密钥、实际 AI 请求、私人资料或未打码截图。No keys, raw requests, private data or unredacted screenshots are included."
           required: true
