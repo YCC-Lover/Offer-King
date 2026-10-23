@@ -12,14 +12,14 @@ A local-first job-search companion: follow up on applications, compare offers, a
 
 [简体中文](../../../README.md) · **English** · [日本語](../ja/README.md) · [한국어](../ko/README.md)
 
-**[Download Windows 2.5.4](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-Setup-2.5.4.exe)** · **[Download Android 2.5.4](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-2.5.4-android-trial.apk)**
+**[Download Windows 2.6.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Download Android 2.6.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-2.6.0-android-trial.apk)**
 
-[Download & verification guide](DOWNLOAD.md) · [AI setup](AI-SETUP.md) · [Release notes](../../RELEASE-2.5.4.md)
+[Download & verification guide](DOWNLOAD.md) · [AI setup](AI-SETUP.md) · [Release notes](../../RELEASE-2.6.0.md)
 
 </div>
 
 > [!IMPORTANT]
-> **2.5.4 is a trial candidate (Pre-release), not a production release.** Windows is **NotSigned**; Android has a **Debug development/test signature**, not a production identity.
+> **2.6.0 is a trial candidate (Pre-release), not a production release.** Windows is **NotSigned**; Android has a **Debug development/test signature**, not a production identity.
 > Windows clean/upgrade installation and uninstallation, and Android real-device installation, upgrade and runtime use, **have not completed acceptance testing**. Export a backup before upgrading; if Android reports a signature conflict, stop rather than uninstalling your existing app.
 > No macOS, iOS or Linux installer is available.
 
@@ -57,7 +57,7 @@ Language switches take effect immediately and stay on this device. **Your compan
 
 ![Actual Offer King 2.3.0 English dashboard with synthetic applications](../../images/17-english-ui.png)
 
-*Actual English UI from the 2.3.0 packaged candidate, using synthetic data at 1400 × 900 and 100% text size, with external network access blocked. This is not a 2.5.4 or Android screenshot. Chinese company/job names demonstrate unchanged user content; new users start empty. [Screenshot sources](../../images/README.md)*
+*Actual English UI from the 2.3.0 packaged candidate, using synthetic data at 1400 × 900 and 100% text size, with external network access blocked. This is not a 2.6.0 or Android screenshot. Chinese company/job names demonstrate unchanged user content; new users start empty. [Screenshot sources](../../images/README.md)*
 
 <details>
 <summary>Older application-board example — 2.0.0</summary>
@@ -68,12 +68,16 @@ This older Chinese-interface screenshot shows the board layout with synthetic da
 
 </details>
 
-## What is new in the 2.5.4 trial?
+## What is new in the 2.6.0 trial?
 
-- **Windows and Android trial entry points.** Android adds native document access and company-website icons; Help makes the signing and untested-device limits visible.
-- **Windows foreground release checks.** Manual checks and optional daily checks open the official release page; they do not download or install updates.
+- **Find the next record faster.** Open local quick find from the header or with `Ctrl/Cmd + K`; search pages, companies and jobs, then navigate with the keyboard.
+- **Work in a board or a list.** Switch views, combine six filters (stage, priority, city, work mode, favorites and reminders), sort, and save up to **12 named views**. Lists show **30 records per page**; views store presentation preferences, not copies of your records or search text.
+- **Follow up without opening a long form.** Edit the next action and date from a board/list card or reminder, then explicitly save. Successful changes enter the timeline without moving the job's stage.
+- **Focus on today's work.** A more compact home prioritizes reminders; details reveal secondary fields on demand. Mobile layouts preserve readable large text, scrolling and fixed actions.
 
-[Read the full 2.5.4 notes](../../RELEASE-2.5.4.md) · [Release page](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.5.4) · [Version history](../../../CHANGELOG.md)
+These additions work locally and do not call AI. Automatic research remains off by default. Verification passed **1,280 unit/component tests**, **314 Node tests** (4 skipped), **5 packaged Electron scenarios**, and **one unpacked 2.5.4 → 2.6.0 upgrade scenario using synthetic data**. Android compiled and passed static package checks; browser touch/layout checks are not phone acceptance. Actual Windows installation and Android real-device acceptance are still pending.
+
+[Read the full 2.6.0 notes](../../RELEASE-2.6.0.md) · [Release page](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0) · [Version history](../../../CHANGELOG.md)
 
 ## AI: choose when and how to use it
 
@@ -119,7 +123,7 @@ Cloud extraction sends pasted text to your selected model. The full paste is mem
 <details>
 <summary><strong>How do I update? Which platforms and languages are available?</strong></summary>
 
-Windows can check releases while open and in the foreground, manually or once daily when enabled; it **never downloads or installs automatically**. Versions 2.4.0 and earlier need a manual upgrade before gaining these notifications. Follow the download guide manually for Android Debug; it is not a production upgrade channel. Stop on a signature conflict rather than deleting existing data.
+Windows can check releases while open and in the foreground, manually or once daily when enabled; it **never downloads or installs automatically**. Enable **Include candidate releases** to be offered 2.6.0. Versions 2.4.0 and earlier need a manual upgrade before gaining these notifications. Follow the download guide manually for Android Debug; it is not a production upgrade channel. Stop on a signature conflict rather than deleting existing data.
 
 The published trial covers Windows 10 / 11 x64 and Android 7.0+ with Simplified Chinese, English, Japanese and Korean UI. Real-device acceptance remains pending. No macOS/iOS/Linux installer or portable edition is available. The 1100 × 700 minimum window is Windows-only, not an Android requirement.
 
@@ -139,4 +143,4 @@ If it helps your search, Star the [project](https://github.com/YCC-Lover/Offer-K
 
 [Chinese documentation hub](../../README.md) · [All releases](https://github.com/YCC-Lover/Offer-King/releases) · [License](../../../LICENSE.md) · [Third-party notices](../../../THIRD-PARTY-NOTICES.txt)
 
-Offer King is closed-source software. This public repository provides downloads, documentation and feedback channels, not the application source code. Documentation updated **2026-10-20**.
+Offer King is closed-source software. This public repository provides downloads, documentation and feedback channels, not the application source code. Documentation updated **2026-10-23**.

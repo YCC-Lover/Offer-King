@@ -13,7 +13,7 @@
 ## 使用者可以做的事
 
 - 仅从本仓库 Releases 下载对应平台文件，核对 SHA-256；不要关闭 Defender、SmartScreen、Play Protect 等系统防护。
-- 2.5.4 Windows 包未正式签名；Android APK 使用开发测试签名，不是未签名，也不是正式发布证书。哈希一致只证明文件匹配，不代表 Microsoft、Google 或 GitHub 的安全认证。
+- 2.6.0 Windows 包未正式签名；Android APK 使用开发测试签名，不是未签名，也不是正式发布证书。哈希一致只证明文件匹配，不代表 Microsoft、Google 或 GitHub 的安全认证。
 - 真实 Windows 首装、覆盖安装、卸载及 Android 真机运行尚未验收；自动化测试或 APK 编译通过不能替代这些验证。没有 macOS／iOS 安装包。
 - 升级前导出并妥善保管备份，附件原文件另存；API Key 不在 JSON 备份中。Android 签名不同可能无法覆盖，不要为绕过冲突直接卸载旧 App，也不要通过清空数据目录解决问题。
 - 版本检查只读取固定官方 GitHub 发布信息；Windows 有可关闭的前台提醒，不自动下载或安装。Android Debug 试用文件不作为正式升级匹配资产；应用不会替你确认某个签名是否兼容旧安装。

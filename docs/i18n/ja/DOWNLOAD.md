@@ -4,15 +4,15 @@
 
 [日本語ホーム](README.md) · [AI 設定](AI-SETUP.md)
 
-## 2.5.4 試用候補版のダウンロード
+## 2.6.0 試用候補版のダウンロード
 
-**[Windows 10 / 11 x64 試用版 · EXE](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-Setup-2.5.4.exe)** · **[Android 開発試用版 · APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-2.5.4-android-trial.apk)**
+**[Windows 10 / 11 x64 試用版 · EXE](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Android 開発試用版 · APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-2.6.0-android-trial.apk)**
 
-Windows：**112,083,805 バイト**。Android：**33,702,975 バイト**。
+Windows：**112,107,822 バイト**。Android：**33,734,163 バイト**。
 
-[固定 v2.5.4 リリースページ](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.5.4) · [SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/SHA256SUMS.txt) · [START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/START-HERE.md) · [TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/TEST-RESULTS.json)
+[固定 v2.6.0 リリースページ](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0) · [SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/SHA256SUMS.txt) · [START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/START-HERE.md) · [TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/TEST-RESULTS.json)
 
-> **小規模試用向けの候補版（Pre-release）で、正式版ではありません。** Windows は正式なコード署名なし（**NotSigned**）、Android は正式配布用ではない **Debug 開発・テスト署名**です。Windows の新規・上書きインストール・アンインストールと、Android 実機の初回・上書きインストール・利用は**受け入れ検証未完了**です。更新前にバックアップしてください。[検証範囲（中国語）](../../RELEASE-2.5.4.md)
+> **小規模試用向けの候補版（Pre-release）で、正式版ではありません。** Windows は正式なコード署名なし（**NotSigned**）、Android は正式配布用ではない **Debug 開発・テスト署名**です。Windows の新規・上書きインストール・アンインストールと、Android 実機の初回・上書きインストール・利用は**受け入れ検証未完了**です。更新前にバックアップしてください。[検証範囲（中国語）](../../RELEASE-2.6.0.md)
 
 リリースの 5 ファイルは Windows EXE、Android APK、チェックサム、入門説明、テスト結果です。公開ダウンロードに GitHub アカウントは不要です。端末に合うファイルを取得してください。GitHub が生成する `Source code` 圧縮ファイルは本公開リポジトリの文書で、アプリをインストールできません。開発ツールは不要です。
 
@@ -26,30 +26,38 @@ Windows：**112,083,805 バイト**。Android：**33,702,975 バイト**。
 
 インストール後はサイドバー、または「設定・バックアップ → 表示・読みやすさ」で言語を選び、「応募を追加」で記録を作成します。切替はすぐに反映し、入力途中の内容は消しません。企業名・職種名・メモ・独自のステージ名は元のままです。[操作ガイド（中国語）](../../QUICKSTART.md)
 
-### 2.5.4 でも使える端末内ツール
+### 2.6.0 の端末内ツール
+
+**2.6.0 の新機能：** 端末内クイック検索（`Ctrl/Cmd + K`）、ボード／一覧、組み合わせフィルター、最大 12 件の名前付きビュー、次のアクションの簡単編集は、AI なしで利用できます。アクションは明示的に保存し、履歴に残しますが、選考ステージは変えません。コンパクトなホーム、展開式の詳細、モバイルの大きい文字の表示も改善しました。[詳しいリリースノート（中国語）](../../RELEASE-2.6.0.md)
 
 - **貼り付けてクイック入力：** 応募の追加画面で求人原文を抽出し、根拠を確認して選択した空欄だけへ入力します。既存の入力は上書きせず、全文は現在の画面のメモリにだけ保持し、復元用下書き・バックアップには含めません。AI 設定・通信・AI 料金は不要です。
 - **手取り給与：** 中国本土の居住者個人が 1 月から同一勤務先で固定月給を 12 か月受け取る CNY 給与について、個人負担と所得税を試算します。任意の都市名と実際の基数・料率を入力でき、北京の参考テンプレートは明示的に適用した場合だけ使います。求人・都市予算を変更せず、外貨は換算しません。税務助言ではなく、オフライン・AI 料金なしの概算です。
+
+## 実施した検証
+
+単体・コンポーネントテスト 1,280 件が成功し、Node は 314 件成功・4 件スキップでした。パッケージ版 Electron 5 シナリオと、架空データによる展開済み 2.5.4 → 2.6.0 更新 1 シナリオも成功しました。Android は既存の Debug 署名でビルドし、構造・バージョン・アセット・署名を静的に確認しました。ブラウザーでは大きい文字の表示とタッチ操作も確認しました。
+
+**実際のインストールを検証済みという意味ではありません。** Windows の新規・インストーラーによる上書き・アンインストール、Android 実機のインストール・更新・権限・キーボード・実行は未検証です。正式な署名、macOS／iOS パッケージ、実際の有料 AI 接続検証も含みません。[テスト報告（中国語）](../../RELEASE-2.6.0.md#已验证与尚未验收)
 
 ## ファイルを確認する
 
 Windows でダウンロード先のフォルダーから PowerShell を開き、取得したファイルのコマンドを実行します。
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.5.4.exe'
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.5.4-android-trial.apk'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.6.0.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.6.0-android-trial.apk'
 ```
 
-Windows EXE：**112,083,805 バイト**。SHA-256：
+Windows EXE：**112,107,822 バイト**。SHA-256：
 
 ```text
-75B19B121A9736C2B46C62CCA9E40333B4F4E8E92528B34D4A10BBE4E4DE7A8D
+495A394BC9FD565CF18120A469C3EDA145463F2C52D32A0901028E492320FEFE
 ```
 
-Android APK：**33,702,975 バイト**。SHA-256：
+Android APK：**33,734,163 バイト**。SHA-256：
 
 ```text
-85CA9C2F67BE4EDE787016E6B9487D50F359C7171B271AFE8DFE022FECEAB89C
+5BC13988FCA751CEF0E3477E672C0459B6A55FF1FFF336BF516EB50ADB37518E
 ```
 
 ハッシュ一致は公開ファイルとの同一性を確認するもので、電子署名や安全性の認証ではありません。別バージョンでは該当リリースの値を使ってください。
@@ -69,16 +77,16 @@ Android APK：**33,702,975 バイト**。SHA-256：
 
 1. 旧アプリがある場合は、先に JSON を書き出して保存を確認します。添付原本も別途保管してください。
 2. APK を照合し、端末のファイル管理アプリから開いてシステムの案内に従います。Play Protect などの保護機能は無効にしないでください。
-3. この APK は以前の開発試用版と同じ Debug 署名を使用します。ただし、同じアプリ ID と署名は静的な条件にすぎず、**上書き成功の検証ではありません**。バージョンは 2.5.4 のままで、ハッシュで本ファイルを識別します。
+3. この APK は以前の開発試用版と同じ Debug 署名を使用します。ただし、同じアプリ ID と署名は静的な条件にすぎず、**上書き成功の検証ではありません**。本版は 2.6.0（version code 2006000）で、ハッシュでファイルを照合できます。
 4. 署名競合、バージョンエラー、セキュリティによる停止があれば**作業を止めて報告し、元のアプリをそのまま削除したりデータを消したりしないでください**。将来の正式署名版で、この Debug 版を直接置き換えられない場合があります。
 5. 架空の記録と AI 未設定で始め、オフライン作成、保存・再起動、JSON 書き出し、125% 文字、スクロール、文書アクセスを確認します。これらの実機検証は未完了で、ビルド成功は端末での動作保証ではありません。
 
 ## 更新案内と自動インストールは別です
 
-自動チェックが有効な **Windows 2.5.4 は起動中・前面表示時に 1 日 1 回、新バージョンを確認**できます。手動確認と公式リリースページを開く操作もありますが、自動取得・インストールはしません。**2.4.0 以前では最初の手動更新が必要**です。GitHub Watch は別の通知機能です。
+自動チェックが有効な **Windows 2.5.4 以降は起動中・前面表示時に 1 日 1 回、新バージョンを確認**できます。旧版から 2.6.0 の案内を受け取るには更新設定の**候補版を含める**を有効にしてください。手動確認と公式リリースページを開く操作もありますが、自動取得・インストールはしません。**2.4.0 以前では最初の手動更新が必要**です。GitHub Watch は別の通知機能です。
 
-**Android Debug 試用版は正式な自動更新経路として推奨しません。** 固定リリースとバックアップの説明に従って手動で扱ってください。GitHub の Latest が別版を示す場合があるため、上の v2.5.4 固定リンクを使います。共有するのは EXE/APK とガイドだけにし、個人データ、バックアップ、キーは渡さないでください。
+**Android Debug 試用版は正式な自動更新経路として推奨しません。** 固定リリースとバックアップの説明に従って手動で扱ってください。GitHub の Latest が別版を示す場合があるため、上の v2.6.0 固定リンクを使います。共有するのは EXE/APK とガイドだけにし、個人データ、バックアップ、キーは渡さないでください。
 
 [AI 設定](AI-SETUP.md) · [プライバシー（中国語）](../../PRIVACY.md) · [フィードバック](../../../CONTRIBUTING.md)
 
-ダウンロード情報更新：2026-10-19。
+ダウンロード情報更新：2026-10-23。

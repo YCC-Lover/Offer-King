@@ -4,15 +4,15 @@
 
 [한국어 홈](README.md) · [AI 설정](AI-SETUP.md)
 
-## 2.5.4 후보 체험판 다운로드
+## 2.6.0 후보 체험판 다운로드
 
-**[Windows 10 / 11 x64 체험판 · EXE](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-Setup-2.5.4.exe)** · **[Android 개발 체험판 · APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/Offer-King-2.5.4-android-trial.apk)**
+**[Windows 10 / 11 x64 체험판 · EXE](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Android 개발 체험판 · APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-2.6.0-android-trial.apk)**
 
-Windows: **112,083,805바이트**. Android: **33,702,975바이트**.
+Windows: **112,107,822바이트**. Android: **33,734,163바이트**.
 
-[고정 v2.5.4 릴리스 페이지](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.5.4) · [SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/SHA256SUMS.txt) · [START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/START-HERE.md) · [TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.5.4/TEST-RESULTS.json)
+[고정 v2.6.0 릴리스 페이지](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0) · [SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/SHA256SUMS.txt) · [START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/START-HERE.md) · [TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/TEST-RESULTS.json)
 
-> **소규모 체험용 후보 버전(Pre-release)이며 정식 배포판이 아닙니다.** Windows는 정식 코드 서명 없음(**NotSigned**), Android는 정식 배포용이 아닌 **Debug 개발·테스트 서명**입니다. Windows 새 설치·덮어쓰기·제거와 Android 실기기 첫 설치·덮어쓰기·실행은 **인수 검증 미완료**입니다. 업데이트 전에 백업하세요. [검증 범위(중국어)](../../RELEASE-2.5.4.md)
+> **소규모 체험용 후보 버전(Pre-release)이며 정식 배포판이 아닙니다.** Windows는 정식 코드 서명 없음(**NotSigned**), Android는 정식 배포용이 아닌 **Debug 개발·테스트 서명**입니다. Windows 새 설치·덮어쓰기·제거와 Android 실기기 첫 설치·덮어쓰기·실행은 **인수 검증 미완료**입니다. 업데이트 전에 백업하세요. [검증 범위(중국어)](../../RELEASE-2.6.0.md)
 
 릴리스 파일은 Windows EXE, Android APK, 체크섬 목록, 시작 안내, 테스트 결과의 5개입니다. 공개 다운로드에 GitHub 계정은 필요하지 않습니다. 기기에 맞는 파일을 받으세요. GitHub의 `Source code` 압축 파일은 공개 저장소 문서이며 앱을 설치할 수 없습니다. 개발 도구도 필요하지 않습니다.
 
@@ -26,30 +26,38 @@ Windows: **112,083,805바이트**. Android: **33,702,975바이트**.
 
 설치 후 사이드바 또는 설정 및 백업 → 화면 및 가독성에서 언어를 고르고 지원 추가로 기록을 만드세요. 전환은 즉시 적용되고 입력 중인 내용을 지우지 않습니다. 회사명·직무명·메모·직접 정한 단계 이름은 원문을 유지합니다. [자세한 사용법(중국어)](../../QUICKSTART.md)
 
-### 2.5.4에서도 제공하는 로컬 도구
+### 2.6.0 로컬 도구
+
+**2.6.0 새 기능:** 로컬 빠른 찾기(`Ctrl/Cmd + K`), 보드·목록, 조합 필터, 이름 있는 보기 최대 12개, 다음 할 일 빠른 수정은 AI 없이 사용할 수 있습니다. 다음 할 일은 직접 저장해야 하며 변경 이력만 남기고 지원 단계는 바꾸지 않습니다. 간결한 홈, 펼침형 상세 항목, 모바일 큰 글자 배치도 개선했습니다. [전체 릴리스 노트(중국어)](../../RELEASE-2.6.0.md)
 
 - **붙여 넣어 빠르게 입력:** 지원 추가의 오프라인 인식 미리 보기에서 원문 근거를 확인하고 선택한 빈 항목만 채웁니다. 기존 입력은 덮어쓰지 않으며 전체 원문은 현재 창의 메모리에만 남고 복구 초안·백업에는 포함되지 않습니다. AI 설정·네트워크 요청·AI 요금이 없습니다.
 - **실수령 급여:** 중국 본토 거주자 개인이 1월부터 같은 직장에서 고정 월급을 12개월 받는 CNY 급여의 개인 부담금·소득세를 추정합니다. 어떤 도시든 실제 기준액·비율을 직접 입력할 수 있고 베이징 참고 템플릿은 직접 적용해야 사용됩니다. 원래 채용 기록이나 도시 예산은 바꾸지 않고 외화를 환산하지 않으며 세무 자문이 아닙니다. 계산은 오프라인이며 AI 요금이 없습니다.
+
+## 검증한 범위
+
+단위·컴포넌트 테스트 1,280개가 통과했으며 Node는 314개 통과·4개 건너뜀이었습니다. 패키지 Electron 시나리오 5개와 가상 데이터로 압축 해제된 2.5.4 → 2.6.0 앱을 전환하는 업그레이드 시나리오 1개도 통과했습니다. Android는 기존 Debug 인증서로 빌드하고 패키지 구조·버전·자산·서명을 정적으로 확인했습니다. 브라우저에서는 큰 글자 화면과 터치 동작도 확인했습니다.
+
+**실제 설치 인수 검증을 마쳤다는 뜻은 아닙니다.** Windows 새 설치·설치 파일을 통한 덮어쓰기·제거, Android 실기기 설치·업데이트·권한·키보드·실행은 미검증입니다. 정식 서명, macOS·iOS 패키지, 실제 유료 AI 연결 검증도 포함되지 않습니다. [테스트 보고서(중국어)](../../RELEASE-2.6.0.md#已验证与尚未验收)
 
 ## 파일 확인하기
 
 Windows에서 받은 파일이 있는 폴더의 PowerShell을 열고 해당 파일의 명령을 실행하세요.
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.5.4.exe'
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.5.4-android-trial.apk'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.6.0.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.6.0-android-trial.apk'
 ```
 
-Windows EXE — **112,083,805바이트**, SHA-256:
+Windows EXE — **112,107,822바이트**, SHA-256:
 
 ```text
-75B19B121A9736C2B46C62CCA9E40333B4F4E8E92528B34D4A10BBE4E4DE7A8D
+495A394BC9FD565CF18120A469C3EDA145463F2C52D32A0901028E492320FEFE
 ```
 
-Android APK — **33,702,975바이트**, SHA-256:
+Android APK — **33,734,163바이트**, SHA-256:
 
 ```text
-85CA9C2F67BE4EDE787016E6B9487D50F359C7171B271AFE8DFE022FECEAB89C
+5BC13988FCA751CEF0E3477E672C0459B6A55FF1FFF336BF516EB50ADB37518E
 ```
 
 해시 일치는 공개한 파일과 동일하다는 뜻이며 전자 서명이나 안전 인증은 아닙니다. 다른 버전은 해당 릴리스의 값을 확인하세요.
@@ -69,16 +77,16 @@ Android APK — **33,702,975바이트**, SHA-256:
 
 1. 기존 앱이 있으면 먼저 JSON을 내보내 실제 저장을 확인하세요. 첨부 원본도 따로 보관합니다.
 2. APK를 확인한 뒤 휴대폰의 시스템 파일 관리자에서 열고 보안 안내를 따르세요. Play Protect 등 시스템 보호 기능을 끄지 마세요.
-3. 이 APK는 이전 개발 체험판의 Debug 서명을 재사용합니다. 같은 앱 ID와 서명은 정적인 전제일 뿐 **덮어쓰기 성공을 검증한 것은 아닙니다**. 버전은 여전히 2.5.4이며 해시로 이번 파일을 구별합니다.
+3. 이 APK는 이전 개발 체험판의 Debug 서명을 재사용합니다. 같은 앱 ID와 서명은 정적인 전제일 뿐 **덮어쓰기 성공을 검증한 것은 아닙니다**. 이번 버전은 2.6.0(version code 2006000)이며 해시로 정확한 파일을 확인합니다.
 4. 서명 충돌·버전 오류·보안 차단이 보이면 **중단하고 신고하세요. 기존 앱부터 삭제하거나 데이터를 지우지 마세요.** 향후 정식 서명판은 Debug판을 바로 대체하지 못할 수 있습니다. 제거를 데이터 이전 방법으로 삼지 마세요.
 5. 가상 기록과 AI 미설정으로 시작해 오프라인 생성, 저장·다시 열기, JSON 내보내기, 글자 125%, 스크롤, 문서 권한을 확인하세요. 이 실기기 검증은 아직 완료되지 않았으며 빌드 성공은 기기 동작 보장이 아닙니다.
 
 ## 새 버전 안내와 자동 설치는 다릅니다
 
-자동 확인을 켠 **Windows 2.5.4는 앱이 열려 있고 전면에 있을 때 하루 한 번 새 버전을 확인**할 수 있습니다. 수동 확인과 공식 릴리스 페이지 열기도 지원하지만 자동 다운로드·설치는 하지 않습니다. **2.4.0 이하는 먼저 한 번 수동으로 업데이트해야** 새 알림 기능을 받을 수 있습니다. GitHub Watch는 별도의 알림입니다.
+자동 확인을 켠 **Windows 2.5.4 이상은 앱이 열려 있고 전면에 있을 때 하루 한 번 새 버전을 확인**할 수 있습니다. 구버전에서 2.6.0 안내를 받으려면 업데이트 설정의 **후보 버전 포함**을 켜세요. 수동 확인과 공식 릴리스 페이지 열기도 지원하지만 자동 다운로드·설치는 하지 않습니다. **2.4.0 이하는 먼저 한 번 수동으로 업데이트해야** 새 알림 기능을 받을 수 있습니다. GitHub Watch는 별도의 알림입니다.
 
-**Android Debug 체험판은 정식 자동 업데이트 채널로 권장하지 않습니다.** 고정 릴리스와 백업 안내에 따라 수동으로 다루세요. GitHub Latest는 다른 버전을 가리킬 수 있으므로 위 v2.5.4 고정 링크를 사용하세요. EXE/APK와 안내만 공유하고 개인 데이터 폴더·백업·키는 공유하지 마세요.
+**Android Debug 체험판은 정식 자동 업데이트 채널로 권장하지 않습니다.** 고정 릴리스와 백업 안내에 따라 수동으로 다루세요. GitHub Latest는 다른 버전을 가리킬 수 있으므로 위 v2.6.0 고정 링크를 사용하세요. EXE/APK와 안내만 공유하고 개인 데이터 폴더·백업·키는 공유하지 마세요.
 
 [AI 설정](AI-SETUP.md) · [개인정보 안내(중국어)](../../PRIVACY.md) · [피드백](../../../CONTRIBUTING.md)
 
-다운로드 정보 업데이트: 2026-10-19.
+다운로드 정보 업데이트: 2026-10-23.

@@ -1,10 +1,10 @@
-# Offer King 2.5.4 AI setup
+# Offer King 2.6.0 AI setup
 
 [简体中文](../../AI-SETUP.md) · [English](AI-SETUP.md) · [日本語](../ja/AI-SETUP.md) · [한국어](../ko/AI-SETUP.md)
 
 [English home](README.md) · [Download](DOWNLOAD.md) · [Detailed Chinese guide](../../AI-SETUP.md)
 
-This guide describes the **2.5.4 small-group trial, a Pre-release, not Latest**. There is no trial expiry or extra feature lock. Switch between Simplified Chinese, English, Japanese, and Korean in the sidebar or display settings; switching preserves current input and takes effect immediately. [Download and verification](DOWNLOAD.md) · [2.5.4 release, checksums and trial instructions](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.5.4)
+This guide describes the **2.6.0 small-group trial, a Pre-release, not Latest**. There is no trial expiry or extra feature lock. Switch between Simplified Chinese, English, Japanese, and Korean in the sidebar or display settings; switching preserves current input and takes effect immediately. [Download and verification](DOWNLOAD.md) · [2.6.0 release, checksums and trial instructions](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0)
 
 The steps below include Chinese labels in addition to English descriptions so they can also be followed with older screenshots. Interface language changes do not translate your records or change your AI provider, key, model, search route, or billing consent.
 
@@ -14,13 +14,15 @@ You can manage applications, tasks, offers, and backups without AI. AI is option
 
 | Platform | Trial file and verification limits | AI-specific differences |
 | --- | --- | --- |
-| Windows 10/11 x64 | `Offer-King-Setup-2.5.4.exe`, without a formal code signature. Packaged-app checks do not establish clean-install, upgrade-install or uninstall acceptance; those remain untested | Compatible cloud models, OpenRouter＋Tavily, the original Bailian/DeepSeek routes and local Ollama are implemented; keys use Electron secure storage |
-| Android | `Offer-King-2.5.4-android-trial.apk`, signed with a development/test certificate. Compiled and mock-tested, not accepted on a real phone | Native model tests/listing, text extraction and company/job/risk research are implemented; keys use Android Keystore. Ollama loopback addresses mean the phone, not your PC |
+| Windows 10/11 x64 | `Offer-King-Setup-2.6.0.exe`, without a formal code signature. Packaged-app checks do not establish clean-install, upgrade-install or uninstall acceptance; those remain untested | Compatible cloud models, OpenRouter＋Tavily, the original Bailian/DeepSeek routes and local Ollama are implemented; keys use Electron secure storage |
+| Android | `Offer-King-2.6.0-android-trial.apk`, signed with a development/test certificate. Compiled and mock-tested, not accepted on a real phone | Native model tests/listing, text extraction and company/job/risk research are implemented; keys use Android Keystore. Ollama loopback addresses mean the phone, not your PC |
 | macOS / iPhone / iPad | No installable package is provided in this release | Source and simulated tests are not a tested Apple build |
 
 New users on a fresh installation start with empty data until they import a backup; upgrades do not deliberately clear existing records. There is no cloud sync or bundled author account, records or keys. Back up before upgrading. If Android reports a signature mismatch, do not simply uninstall the old app: export and verify a backup before deciding how to migrate. JSON backups do not contain API keys or attachment files. The release assets `START-HERE.md`, `SHA256SUMS.txt` and `TEST-RESULTS.json` document setup, file checks and tested/untested scope.
 
 ## Start without AI
+
+**The 2.6.0 workflow improvements do not need AI:** quick find, board/list views, combined filters, saved views and quick follow-up all run locally. Existing AI configurations and automatic-research preferences are retained; automatic research stays off for new users. A quick follow-up change does not start a research request. [New features](../../RELEASE-2.6.0.md)
 
 In **Add application → Paste a job posting**, use offline recognition to preview explicit company, role, city, links and salary fields, then choose which empty inputs to fill. Existing input and shared details of a reused company stay unchanged. Ambiguities are not guessed; amounts with no clear currency start unchecked. Complete text stays only in the window's memory and is not saved in recovery drafts or backups. This is not the AI text-extraction feature below: it needs no key or network access and incurs no AI fees.
 
@@ -75,6 +77,8 @@ For job web completion and company risk research, **this version's built-in offi
 
 Pasted-text extraction does not search: the original route can use configured DeepSeek Flash or Pro, but Bailian alone cannot perform it. Alternatively, a custom compatible model plus Tavily can research online. Adding DeepSeek as a custom model uses that Tavily route and does not inherit the original provider key or built-in search. A single official Responses request may involve multiple server-side searches, so one click is not a fixed billing unit. See [DeepSeek's Responses documentation](https://api-docs.deepseek.com/api/create-response/).
 
+**Older model IDs may change:** 2.6.0 preserves the `deepseek-v4-flash` option for existing configurations. As of 2026-10-23, the official Responses documentation lists Flash as `deepseek-flash`. This release has not live-tested whether the older ID still works. If a service returns “model not found/unavailable”, check its current documentation and add/test a compatible profile with a valid model ID. Online research through that compatible route still needs Tavily. The app does not automatically change your model or increase the pricing tier. [Current DeepSeek API documentation](https://api-docs.deepseek.com/api/create-response/)
+
 Android implements these routes too. Cancellation or model/search timeouts stop the task without starting another provider; implementation is not a substitute for real-device or live-provider acceptance.
 
 ## 4. Review results and explicitly save
@@ -115,10 +119,10 @@ AI behavior has automated coverage with simulated responses; complete paid end-t
 
 ### Updates are notifications, not automatic installation
 
-Windows 2.5.4 can check at startup and during foreground use, at most once per day automatically; manual checks are also available. Settings let you turn off automatic checking, include/exclude candidates, or ignore a version. It reads this project's official GitHub release metadata and only notifies for a newer version with a matching platform asset. **It does not download or install automatically**, and it is not a system background push service.
+Windows 2.5.4 and later can check at startup and during foreground use, at most once per day automatically; manual checks are also available. Settings let you turn off automatic checking, include/exclude candidates, or ignore a version. When upgrading from an older version, **Include candidate releases** must be enabled to see 2.6.0. It reads this project's official GitHub release metadata and only notifies for a newer version with a matching platform asset. **It does not download or install automatically**, and it is not a system background push service.
 
-Android has a native checker, but this development-signed `Offer-King-2.5.4-android-trial.apk` is not a formal Android update-matching asset. Get it manually from the [2.5.4 release page](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.5.4); do not expect automatic delivery or compatibility with a differently signed installation. Older versions without a checker need manual downloading. GitHub Watch Releases notifications depend on GitHub account settings, not the app.
+Android has a native checker, but this development-signed `Offer-King-2.6.0-android-trial.apk` is not a formal Android update-matching asset. Get it manually from the [2.6.0 release page](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0); do not expect automatic delivery or compatibility with a differently signed installation. Older versions without a checker need manual downloading. GitHub Watch Releases notifications depend on GitHub account settings, not the app.
 
 Read `START-HERE.md` and verify the checksum first; back up JSON and keep original attachments before any upgrade. Do not disable security protection to bypass warnings or uninstall an Android app merely to bypass a signature mismatch. Share only the release page and guide, never your data directory, backups or keys.
 
-Updated 2026-10-19 for the 2.5.4 candidate. Provider policies and charges are governed by the providers' current terms.
+Updated 2026-10-23 for the 2.6.0 candidate. Provider policies and charges are governed by the providers' current terms.
