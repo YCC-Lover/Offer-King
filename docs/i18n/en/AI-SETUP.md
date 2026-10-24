@@ -1,10 +1,10 @@
-# Offer King 2.6.0 AI setup
+# Offer King AI setup — Android 2.6.1 / Windows 2.6.0
 
 [简体中文](../../AI-SETUP.md) · [English](AI-SETUP.md) · [日本語](../ja/AI-SETUP.md) · [한국어](../ko/AI-SETUP.md)
 
 [English home](README.md) · [Download](DOWNLOAD.md) · [Detailed Chinese guide](../../AI-SETUP.md)
 
-This guide describes the **2.6.0 small-group trial, a Pre-release, not Latest**. There is no trial expiry or extra feature lock. Switch between Simplified Chinese, English, Japanese, and Korean in the sidebar or display settings; switching preserves current input and takes effect immediately. [Download and verification](DOWNLOAD.md) · [2.6.0 release, checksums and trial instructions](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0)
+This guide describes **Android 2.6.1 and Windows 2.6.0 small-group trial candidates, both Pre-releases**. The 2.6.1 update is Android-only and keeps AI configuration and routes unchanged. There is no trial expiry or extra feature lock. Switch between Simplified Chinese, English, Japanese, and Korean in the sidebar or display settings; switching preserves current input and takes effect immediately. [Download and verification](DOWNLOAD.md) · [Android 2.6.1 release and checksums](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.1) · [Windows 2.6.0 release](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0)
 
 The steps below include Chinese labels in addition to English descriptions so they can also be followed with older screenshots. Interface language changes do not translate your records or change your AI provider, key, model, search route, or billing consent.
 
@@ -15,10 +15,10 @@ You can manage applications, tasks, offers, and backups without AI. AI is option
 | Platform | Trial file and verification limits | AI-specific differences |
 | --- | --- | --- |
 | Windows 10/11 x64 | `Offer-King-Setup-2.6.0.exe`, without a formal code signature. Packaged-app checks do not establish clean-install, upgrade-install or uninstall acceptance; those remain untested | Compatible cloud models, OpenRouter＋Tavily, the original Bailian/DeepSeek routes and local Ollama are implemented; keys use Electron secure storage |
-| Android | `Offer-King-2.6.0-android-trial.apk`, signed with a development/test certificate. Compiled and mock-tested, not accepted on a real phone | Native model tests/listing, text extraction and company/job/risk research are implemented; keys use Android Keystore. Ollama loopback addresses mean the phone, not your PC |
+| Android | `Offer-King-2.6.1-android-trial.apk`, signed with the same 2.6.0 Debug certificate. Real-phone first installation, in-place upgrade and secure-key continuity remain unaccepted | Native model tests/listing, text extraction and company/job/risk research are implemented; keys use Android Keystore. Ollama loopback addresses mean the phone, not your PC |
 | macOS / iPhone / iPad | No installable package is provided in this release | Source and simulated tests are not a tested Apple build |
 
-New users on a fresh installation start with empty data until they import a backup; upgrades do not deliberately clear existing records. There is no cloud sync or bundled author account, records or keys. Back up before upgrading. If Android reports a signature mismatch, do not simply uninstall the old app: export and verify a backup before deciding how to migrate. JSON backups do not contain API keys or attachment files. The release assets `START-HERE.md`, `SHA256SUMS.txt` and `TEST-RESULTS.json` document setup, file checks and tested/untested scope.
+New users on a fresh installation start with empty data until they import a backup. Android 2.6.1 keeps the existing app ID, origin, signer and AI storage configuration by design; real-phone retention has not been accepted. Explicitly save edits and export JSON outside app storage before updating. **Use an in-place Update, without uninstalling, clearing data or resetting AI settings.** Check records and AI configuration status afterward. If the signature conflicts, stop and report it. JSON does not contain API keys or attachment files and cannot restore keys after uninstalling. There is no cloud sync or bundled author account, records or keys. The matching release's `START-HERE.md`, `SHA256SUMS.txt` and `TEST-RESULTS.json` document setup and verification scope.
 
 ## Start without AI
 
@@ -121,8 +121,8 @@ AI behavior has automated coverage with simulated responses; complete paid end-t
 
 Windows 2.5.4 and later can check at startup and during foreground use, at most once per day automatically; manual checks are also available. Settings let you turn off automatic checking, include/exclude candidates, or ignore a version. When upgrading from an older version, **Include candidate releases** must be enabled to see 2.6.0. It reads this project's official GitHub release metadata and only notifies for a newer version with a matching platform asset. **It does not download or install automatically**, and it is not a system background push service.
 
-Android has a native checker, but this development-signed `Offer-King-2.6.0-android-trial.apk` is not a formal Android update-matching asset. Get it manually from the [2.6.0 release page](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0); do not expect automatic delivery or compatibility with a differently signed installation. Older versions without a checker need manual downloading. GitHub Watch Releases notifications depend on GitHub account settings, not the app.
+**Android trial 2.6.0 and earlier need one manual upgrade to [2.6.1](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.1)** because the old checker does not recognize trial APK filenames. From 2.6.1, Help & about → App updates can detect higher official trial APKs when candidate releases are included; enabled automatic checks run in the foreground at most once per 24 hours. Manual checks are available; disabled automatic checks and ignored versions remain respected. The notice opens the official release page for you to download and install manually. It does not call AI, send records or keys, change AI settings, incur AI fees or guarantee a future production signer's compatibility. GitHub Watch Releases notifications are separate.
 
 Read `START-HERE.md` and verify the checksum first; back up JSON and keep original attachments before any upgrade. Do not disable security protection to bypass warnings or uninstall an Android app merely to bypass a signature mismatch. Share only the release page and guide, never your data directory, backups or keys.
 
-Updated 2026-10-23 for the 2.6.0 candidate. Provider policies and charges are governed by the providers' current terms.
+Updated 2026-10-24 for Android 2.6.1 / Windows 2.6.0 candidates. The provider-model observation dated 2026-10-23 above remains historical; provider policies and charges follow their current terms.

@@ -4,17 +4,17 @@
 
 [日本語ホーム](README.md) · [AI 設定](AI-SETUP.md)
 
-## 2.6.0 試用候補版のダウンロード
+## Android 2.6.1 / Windows 2.6.0 試用候補版
 
-**[Windows 10 / 11 x64 試用版 · EXE](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Android 開発試用版 · APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-2.6.0-android-trial.apk)**
+**[Windows 10 / 11 x64 · 2.6.0 EXE](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Android 開発試用版 · 2.6.1 APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/Offer-King-2.6.1-android-trial.apk)**
 
-Windows：**112,107,822 バイト**。Android：**33,734,163 バイト**。
+Windows 2.6.0：**112,107,822 バイト**。Android 2.6.1：**33,735,427 バイト**。今回の更新は Android のみで、新しい Windows インストーラーはありません。
 
-[固定 v2.6.0 リリースページ](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0) · [SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/SHA256SUMS.txt) · [START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/START-HERE.md) · [TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/TEST-RESULTS.json)
+[Android v2.6.1 リリース](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.1) · [Android SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/SHA256SUMS.txt) · [Android START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/START-HERE.md) · [Android TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/TEST-RESULTS.json) · [Windows v2.6.0 リリース・確認ファイル](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0)
 
-> **小規模試用向けの候補版（Pre-release）で、正式版ではありません。** Windows は正式なコード署名なし（**NotSigned**）、Android は正式配布用ではない **Debug 開発・テスト署名**です。Windows の新規・上書きインストール・アンインストールと、Android 実機の初回・上書きインストール・利用は**受け入れ検証未完了**です。更新前にバックアップしてください。[検証範囲（中国語）](../../RELEASE-2.6.0.md)
+> **小規模試用向けの候補版（Pre-release）で、正式版ではありません。** Windows は正式なコード署名なし（**NotSigned**）、Android は **Debug 開発・テスト署名**です。Windows の新規・上書きインストール・アンインストールと、Android 実機の初回・上書きインストール、暗号化 AI キーの継続利用は**受け入れ検証未完了**です。更新前にバックアップしてください。[Android の検証範囲（中国語）](../../RELEASE-2.6.1.md)
 
-リリースの 5 ファイルは Windows EXE、Android APK、チェックサム、入門説明、テスト結果です。公開ダウンロードに GitHub アカウントは不要です。端末に合うファイルを取得してください。GitHub が生成する `Source code` 圧縮ファイルは本公開リポジトリの文書で、アプリをインストールできません。開発ツールは不要です。
+Android 2.6.1 リリースには APK、チェックサム、入門説明、テスト結果を掲載し、Windows は別の 2.6.0 リリースから取得します。公開ダウンロードに GitHub アカウントは不要です。GitHub が生成する `Source code` 圧縮ファイルは公開文書で、アプリをインストールできません。開発ツールは不要です。
 
 ## 動作条件と使い始め方
 
@@ -26,7 +26,9 @@ Windows：**112,107,822 バイト**。Android：**33,734,163 バイト**。
 
 インストール後はサイドバー、または「設定・バックアップ → 表示・読みやすさ」で言語を選び、「応募を追加」で記録を作成します。切替はすぐに反映し、入力途中の内容は消しません。企業名・職種名・メモ・独自のステージ名は元のままです。[操作ガイド（中国語）](../../QUICKSTART.md)
 
-### 2.6.0 の端末内ツール
+### Android の更新案内と、従来の端末内ツール
+
+**Android 2.6.1：** 今後の公式試用 APK を認識し、手動確認、自動確認が有効な場合の前面表示中の最大 24 時間に 1 回の確認、公式リリースページを開く操作に対応します。候補版・無視した版の設定も尊重します。ダークモードの文字を改善し、取得とインストールは手動です。更新確認は AI を呼ばず、企業の記録やキーを送信しません。[2.6.1 の変更点](../../RELEASE-2.6.1.md)
 
 **2.6.0 の新機能：** 端末内クイック検索（`Ctrl/Cmd + K`）、ボード／一覧、組み合わせフィルター、最大 12 件の名前付きビュー、次のアクションの簡単編集は、AI なしで利用できます。アクションは明示的に保存し、履歴に残しますが、選考ステージは変えません。コンパクトなホーム、展開式の詳細、モバイルの大きい文字の表示も改善しました。[詳しいリリースノート（中国語）](../../RELEASE-2.6.0.md)
 
@@ -35,7 +37,9 @@ Windows：**112,107,822 バイト**。Android：**33,734,163 バイト**。
 
 ## 実施した検証
 
-単体・コンポーネントテスト 1,280 件が成功し、Node は 314 件成功・4 件スキップでした。パッケージ版 Electron 5 シナリオと、架空データによる展開済み 2.5.4 → 2.6.0 更新 1 シナリオも成功しました。Android は既存の Debug 署名でビルドし、構造・バージョン・アセット・署名を静的に確認しました。ブラウザーでは大きい文字の表示とタッチ操作も確認しました。
+Android 2.6.1 は単体・コンポーネント 1,291 件、ネイティブ JVM 確認 110 件、ネイティブ契約テスト 27 件、模擬ブラウザー 6 シナリオ、型・lint 検査、独立した APK 確認が成功しました。既存の Debug 署名で再ビルドしていますが、実際のスマートフォンで上書きできたことを示す検証ではありません。[2.6.1 の検証範囲](../../RELEASE-2.6.1.md)と添付結果をご覧ください。
+
+以前の 2.6.0 は単体・コンポーネント 1,280 件、Node 314 件（4 件スキップ）、パッケージ版 Electron 5 シナリオ、架空データによる展開済み 2.5.4 → 2.6.0 更新 1 シナリオが成功しました。これらは過去の結果で、2.6.1 の実インストール検証ではありません。
 
 **実際のインストールを検証済みという意味ではありません。** Windows の新規・インストーラーによる上書き・アンインストール、Android 実機のインストール・更新・権限・キーボード・実行は未検証です。正式な署名、macOS／iOS パッケージ、実際の有料 AI 接続検証も含みません。[テスト報告（中国語）](../../RELEASE-2.6.0.md#已验证与尚未验收)
 
@@ -45,7 +49,7 @@ Windows でダウンロード先のフォルダーから PowerShell を開き、
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.6.0.exe'
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.6.0-android-trial.apk'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.6.1-android-trial.apk'
 ```
 
 Windows EXE：**112,107,822 バイト**。SHA-256：
@@ -54,10 +58,10 @@ Windows EXE：**112,107,822 バイト**。SHA-256：
 495A394BC9FD565CF18120A469C3EDA145463F2C52D32A0901028E492320FEFE
 ```
 
-Android APK：**33,734,163 バイト**。SHA-256：
+Android 2.6.1 APK：**33,735,427 バイト**。SHA-256：
 
 ```text
-5BC13988FCA751CEF0E3477E672C0459B6A55FF1FFF336BF516EB50ADB37518E
+13314462F858E6DC88D834030D3CCCE8C766BE57D42AC43A1F73EDE0078E789F
 ```
 
 ハッシュ一致は公開ファイルとの同一性を確認するもので、電子署名や安全性の認証ではありません。別バージョンでは該当リリースの値を使ってください。
@@ -75,18 +79,20 @@ Android APK：**33,734,163 バイト**。SHA-256：
 
 ## Android の試用・更新
 
-1. 旧アプリがある場合は、先に JSON を書き出して保存を確認します。添付原本も別途保管してください。
-2. APK を照合し、端末のファイル管理アプリから開いてシステムの案内に従います。Play Protect などの保護機能は無効にしないでください。
-3. この APK は以前の開発試用版と同じ Debug 署名を使用します。ただし、同じアプリ ID と署名は静的な条件にすぎず、**上書き成功の検証ではありません**。本版は 2.6.0（version code 2006000）で、ハッシュでファイルを照合できます。
+1. 旧アプリがある場合は編集を保存し、**アプリ自身の保存領域の外へ JSON を書き出して**ファイルの存在を確認します。添付原本も別途保管してください。JSON に API キーと添付原本は含まれず、削除したアプリのキーを復元できません。
+2. 2.6.1 APK を照合し、端末のファイル管理アプリから開いて、既存アプリへの**更新**を選びます。アンインストール・データ消去・AI 設定のリセットはしないでください。Play Protect などを無効にせず、システムの案内に従います。
+3. 2.6.0 と同じ Debug 署名、アプリ ID `com.offerflow.mobile`、保存元、AI ストレージを維持する設計ですが、**実機の上書き成功やキー継続利用の検証ではありません**。本版は 2.6.1（version code 2006001）です。更新後は編集する前に記録、添付アクセス、AI 設定状態を確認してください。設定状態の確認のために有料 AI を呼ぶ必要はありません。
 4. 署名競合、バージョンエラー、セキュリティによる停止があれば**作業を止めて報告し、元のアプリをそのまま削除したりデータを消したりしないでください**。将来の正式署名版で、この Debug 版を直接置き換えられない場合があります。
-5. 架空の記録と AI 未設定で始め、オフライン作成、保存・再起動、JSON 書き出し、125% 文字、スクロール、文書アクセスを確認します。これらの実機検証は未完了で、ビルド成功は端末での動作保証ではありません。
+5. 新規の試用では架空の記録と AI 未設定で始め、オフライン作成、保存・再起動、JSON 書き出し、125% 文字、スクロール、文書アクセスを確認します。**実機の初回・上書きインストール、Android Keystore の継続利用は未検証**で、ビルド成功は端末での動作保証ではありません。
 
 ## 更新案内と自動インストールは別です
 
 自動チェックが有効な **Windows 2.5.4 以降は起動中・前面表示時に 1 日 1 回、新バージョンを確認**できます。旧版から 2.6.0 の案内を受け取るには更新設定の**候補版を含める**を有効にしてください。手動確認と公式リリースページを開く操作もありますが、自動取得・インストールはしません。**2.4.0 以前では最初の手動更新が必要**です。GitHub Watch は別の通知機能です。
 
-**Android Debug 試用版は正式な自動更新経路として推奨しません。** 固定リリースとバックアップの説明に従って手動で扱ってください。GitHub の Latest が別版を示す場合があるため、上の v2.6.0 固定リンクを使います。共有するのは EXE/APK とガイドだけにし、個人データ、バックアップ、キーは渡さないでください。
+**Android 試用版 2.6.0 以前では、最初は手動で 2.6.1 に更新してください。** 旧版は手動確認しても試用 APK のファイル名に一致しません。2.6.1 では「ヘルプ・アプリ情報 → アプリの更新」で候補版を含め、手動確認できます。自動確認が有効なら前面での使用中に最大 24 時間に 1 回確認し、無視した版は復元するまで通知しません。より新しい公式の対応 APK だけが対象です。案内は公式リリースページを開き、自動取得・インストールや将来の正式署名との互換性は保証しません。AI の呼出や設定変更はしません。
+
+GitHub の Latest が別版を示す場合があるため、Android v2.6.1 と Windows v2.6.0 の固定リンクを使います。共有するのは EXE/APK とガイドだけにし、個人データ、バックアップ、キーは渡さないでください。
 
 [AI 設定](AI-SETUP.md) · [プライバシー（中国語）](../../PRIVACY.md) · [フィードバック](../../../CONTRIBUTING.md)
 
-ダウンロード情報更新：2026-10-23。
+ダウンロード情報更新：2026-10-24。

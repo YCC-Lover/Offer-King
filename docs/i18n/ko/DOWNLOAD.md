@@ -4,17 +4,17 @@
 
 [한국어 홈](README.md) · [AI 설정](AI-SETUP.md)
 
-## 2.6.0 후보 체험판 다운로드
+## Android 2.6.1 / Windows 2.6.0 후보 체험판 다운로드
 
-**[Windows 10 / 11 x64 체험판 · EXE](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Android 개발 체험판 · APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-2.6.0-android-trial.apk)**
+**[Windows 10 / 11 x64 · 2.6.0 EXE](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Android 개발 체험판 · 2.6.1 APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/Offer-King-2.6.1-android-trial.apk)**
 
-Windows: **112,107,822바이트**. Android: **33,734,163바이트**.
+Windows 2.6.0: **112,107,822바이트**. Android 2.6.1: **33,735,427바이트**. 이번 릴리스는 Android만 업데이트하며 새 Windows 설치 파일은 없습니다.
 
-[고정 v2.6.0 릴리스 페이지](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0) · [SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/SHA256SUMS.txt) · [START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/START-HERE.md) · [TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/TEST-RESULTS.json)
+[Android v2.6.1 릴리스](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.1) · [Android SHA256SUMS.txt](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/SHA256SUMS.txt) · [Android START-HERE.md](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/START-HERE.md) · [Android TEST-RESULTS.json](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/TEST-RESULTS.json) · [Windows v2.6.0 릴리스·검증 파일](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0)
 
-> **소규모 체험용 후보 버전(Pre-release)이며 정식 배포판이 아닙니다.** Windows는 정식 코드 서명 없음(**NotSigned**), Android는 정식 배포용이 아닌 **Debug 개발·테스트 서명**입니다. Windows 새 설치·덮어쓰기·제거와 Android 실기기 첫 설치·덮어쓰기·실행은 **인수 검증 미완료**입니다. 업데이트 전에 백업하세요. [검증 범위(중국어)](../../RELEASE-2.6.0.md)
+> **소규모 체험용 후보 버전(Pre-release)이며 정식 배포판이 아닙니다.** Windows는 정식 코드 서명 없음(**NotSigned**), Android는 **Debug 개발·테스트 서명**입니다. Windows 새 설치·덮어쓰기·제거와 Android 실기기 첫 설치·덮어쓰기·암호화 AI 키 유지·실행은 **인수 검증 미완료**입니다. 업데이트 전에 백업하세요. [Android 검증 범위(중국어)](../../RELEASE-2.6.1.md)
 
-릴리스 파일은 Windows EXE, Android APK, 체크섬 목록, 시작 안내, 테스트 결과의 5개입니다. 공개 다운로드에 GitHub 계정은 필요하지 않습니다. 기기에 맞는 파일을 받으세요. GitHub의 `Source code` 압축 파일은 공개 저장소 문서이며 앱을 설치할 수 없습니다. 개발 도구도 필요하지 않습니다.
+Android 2.6.1 릴리스에는 APK, 체크섬, 시작 안내, 테스트 결과가 있으며 Windows는 별도 2.6.0 릴리스에서 받습니다. 공개 다운로드에 GitHub 계정은 필요하지 않습니다. GitHub의 `Source code` 압축 파일은 공개 저장소 문서이며 앱을 설치할 수 없습니다. 개발 도구도 필요하지 않습니다.
 
 ## 사용 조건과 첫 실행
 
@@ -26,7 +26,9 @@ Windows: **112,107,822바이트**. Android: **33,734,163바이트**.
 
 설치 후 사이드바 또는 설정 및 백업 → 화면 및 가독성에서 언어를 고르고 지원 추가로 기록을 만드세요. 전환은 즉시 적용되고 입력 중인 내용을 지우지 않습니다. 회사명·직무명·메모·직접 정한 단계 이름은 원문을 유지합니다. [자세한 사용법(중국어)](../../QUICKSTART.md)
 
-### 2.6.0 로컬 도구
+### Android 업데이트 안내와 기존 로컬 도구
+
+**Android 2.6.1:** 미래의 공식 체험 APK를 인식하고 수동 확인·활성화 시 전면에서 최대 24시간에 한 번 자동 확인·공식 릴리스 페이지 열기를 지원합니다. 후보 버전·무시한 버전 설정을 유지하고 다운로드와 설치는 직접 합니다. 다크 모드 안내 글자도 개선했습니다. 버전 확인은 AI를 호출하지 않고 회사 기록이나 키를 보내지 않습니다. [2.6.1 변경 사항](../../RELEASE-2.6.1.md)
 
 **2.6.0 새 기능:** 로컬 빠른 찾기(`Ctrl/Cmd + K`), 보드·목록, 조합 필터, 이름 있는 보기 최대 12개, 다음 할 일 빠른 수정은 AI 없이 사용할 수 있습니다. 다음 할 일은 직접 저장해야 하며 변경 이력만 남기고 지원 단계는 바꾸지 않습니다. 간결한 홈, 펼침형 상세 항목, 모바일 큰 글자 배치도 개선했습니다. [전체 릴리스 노트(중국어)](../../RELEASE-2.6.0.md)
 
@@ -35,7 +37,9 @@ Windows: **112,107,822바이트**. Android: **33,734,163바이트**.
 
 ## 검증한 범위
 
-단위·컴포넌트 테스트 1,280개가 통과했으며 Node는 314개 통과·4개 건너뜀이었습니다. 패키지 Electron 시나리오 5개와 가상 데이터로 압축 해제된 2.5.4 → 2.6.0 앱을 전환하는 업그레이드 시나리오 1개도 통과했습니다. Android는 기존 Debug 인증서로 빌드하고 패키지 구조·버전·자산·서명을 정적으로 확인했습니다. 브라우저에서는 큰 글자 화면과 터치 동작도 확인했습니다.
+Android 2.6.1은 단위·컴포넌트 1,291개, 네이티브 JVM 확인 110개, 네이티브 계약 테스트 27개, 모의 브라우저 시나리오 6개, 타입·lint 검사와 독립 APK 검증을 통과했습니다. 기존 Debug 인증서로 다시 빌드했지만 실제 휴대전화 덮어쓰기를 입증한 것은 아닙니다. [2.6.1 검증 범위](../../RELEASE-2.6.1.md)와 첨부 결과를 확인하세요.
+
+이전 2.6.0에서는 단위·컴포넌트 1,280개, Node 314개(4개 건너뜀), 패키지 Electron 시나리오 5개, 가상 데이터의 압축 해제된 2.5.4 → 2.6.0 전환 시나리오 1개가 통과했습니다. 이는 이전 버전의 결과이며 2.6.1 실설치 검증이 아닙니다.
 
 **실제 설치 인수 검증을 마쳤다는 뜻은 아닙니다.** Windows 새 설치·설치 파일을 통한 덮어쓰기·제거, Android 실기기 설치·업데이트·권한·키보드·실행은 미검증입니다. 정식 서명, macOS·iOS 패키지, 실제 유료 AI 연결 검증도 포함되지 않습니다. [테스트 보고서(중국어)](../../RELEASE-2.6.0.md#已验证与尚未验收)
 
@@ -45,7 +49,7 @@ Windows에서 받은 파일이 있는 폴더의 PowerShell을 열고 해당 파�
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-Setup-2.6.0.exe'
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.6.0-android-trial.apk'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Offer-King-2.6.1-android-trial.apk'
 ```
 
 Windows EXE — **112,107,822바이트**, SHA-256:
@@ -54,10 +58,10 @@ Windows EXE — **112,107,822바이트**, SHA-256:
 495A394BC9FD565CF18120A469C3EDA145463F2C52D32A0901028E492320FEFE
 ```
 
-Android APK — **33,734,163바이트**, SHA-256:
+Android 2.6.1 APK — **33,735,427바이트**, SHA-256:
 
 ```text
-5BC13988FCA751CEF0E3477E672C0459B6A55FF1FFF336BF516EB50ADB37518E
+13314462F858E6DC88D834030D3CCCE8C766BE57D42AC43A1F73EDE0078E789F
 ```
 
 해시 일치는 공개한 파일과 동일하다는 뜻이며 전자 서명이나 안전 인증은 아닙니다. 다른 버전은 해당 릴리스의 값을 확인하세요.
@@ -75,18 +79,20 @@ Android APK — **33,734,163바이트**, SHA-256:
 
 ## Android 체험 및 업데이트
 
-1. 기존 앱이 있으면 먼저 JSON을 내보내 실제 저장을 확인하세요. 첨부 원본도 따로 보관합니다.
-2. APK를 확인한 뒤 휴대폰의 시스템 파일 관리자에서 열고 보안 안내를 따르세요. Play Protect 등 시스템 보호 기능을 끄지 마세요.
-3. 이 APK는 이전 개발 체험판의 Debug 서명을 재사용합니다. 같은 앱 ID와 서명은 정적인 전제일 뿐 **덮어쓰기 성공을 검증한 것은 아닙니다**. 이번 버전은 2.6.0(version code 2006000)이며 해시로 정확한 파일을 확인합니다.
+1. 기존 앱이 있다면 편집 내용을 저장하고 **앱 자체 저장소 밖으로 JSON을 내보내** 파일을 확인하세요. 첨부 원본은 별도로 보관하세요. JSON에는 API 키와 첨부 원본이 없으므로 앱 제거 후 키를 복구할 수 없습니다.
+2. 2.6.1 APK를 확인하고 시스템 파일 관리자에서 열어 기존 앱의 **업데이트**를 선택하세요. 앱 제거·데이터 삭제·AI 설정 초기화는 하지 마세요. Play Protect 등을 끄지 말고 시스템 보안 안내를 따르세요.
+3. 2.6.0과 같은 Debug 서명, 앱 ID `com.offerflow.mobile`, 데이터 원본과 AI 저장소를 유지하는 설계이지만 **실기기 덮어쓰기·키 유지가 검증된 것은 아닙니다**. 이번 버전은 2.6.1(version code 2006001)입니다. 다시 연 뒤 내용을 바꾸기 전에 기록·첨부 접근·AI 설정 상태를 확인하세요. 설정 상태 확인을 위해 유료 AI를 테스트할 필요는 없습니다.
 4. 서명 충돌·버전 오류·보안 차단이 보이면 **중단하고 신고하세요. 기존 앱부터 삭제하거나 데이터를 지우지 마세요.** 향후 정식 서명판은 Debug판을 바로 대체하지 못할 수 있습니다. 제거를 데이터 이전 방법으로 삼지 마세요.
-5. 가상 기록과 AI 미설정으로 시작해 오프라인 생성, 저장·다시 열기, JSON 내보내기, 글자 125%, 스크롤, 문서 권한을 확인하세요. 이 실기기 검증은 아직 완료되지 않았으며 빌드 성공은 기기 동작 보장이 아닙니다.
+5. 새로 시험 설치했다면 가상 기록과 AI 미설정 상태로 오프라인 생성, 저장·다시 열기, JSON 내보내기, 125% 글자, 스크롤, 문서 권한을 확인하세요. **실기기 첫 설치·덮어쓰기·Android Keystore 유지 검증은 미완료**이며 빌드 성공이 기기 검증 성공은 아닙니다.
 
 ## 새 버전 안내와 자동 설치는 다릅니다
 
 자동 확인을 켠 **Windows 2.5.4 이상은 앱이 열려 있고 전면에 있을 때 하루 한 번 새 버전을 확인**할 수 있습니다. 구버전에서 2.6.0 안내를 받으려면 업데이트 설정의 **후보 버전 포함**을 켜세요. 수동 확인과 공식 릴리스 페이지 열기도 지원하지만 자동 다운로드·설치는 하지 않습니다. **2.4.0 이하는 먼저 한 번 수동으로 업데이트해야** 새 알림 기능을 받을 수 있습니다. GitHub Watch는 별도의 알림입니다.
 
-**Android Debug 체험판은 정식 자동 업데이트 채널로 권장하지 않습니다.** 고정 릴리스와 백업 안내에 따라 수동으로 다루세요. GitHub Latest는 다른 버전을 가리킬 수 있으므로 위 v2.6.0 고정 링크를 사용하세요. EXE/APK와 안내만 공유하고 개인 데이터 폴더·백업·키는 공유하지 마세요.
+**Android 체험판 2.6.0 이하는 먼저 한 번 직접 2.6.1로 업데이트해야 합니다.** 이전 확인기는 수동 확인을 해도 체험 APK 이름을 인식하지 못합니다. 2.6.1의 도움말 및 정보 → 앱 업데이트에서 후보 버전을 포함하고 수동 확인하세요. 자동 확인을 켜면 전면 사용 중 최대 24시간에 한 번 확인하며 무시한 버전은 복원하기 전까지 알리지 않습니다. 더 높은 공식 호환 APK만 대상입니다. 알림은 공식 릴리스 페이지를 열며 자동 다운로드·설치나 미래 정식 서명 호환성을 보장하지 않습니다. AI를 호출하거나 AI 설정을 변경하지 않습니다.
+
+GitHub Latest는 다른 버전을 가리킬 수 있으므로 Android v2.6.1과 Windows v2.6.0 고정 링크를 사용하세요. EXE/APK와 안내만 공유하고 개인 데이터 폴더·백업·키는 공유하지 마세요.
 
 [AI 설정](AI-SETUP.md) · [개인정보 안내(중국어)](../../PRIVACY.md) · [피드백](../../../CONTRIBUTING.md)
 
-다운로드 정보 업데이트: 2026-10-23.
+다운로드 정보 업데이트: 2026-10-24.

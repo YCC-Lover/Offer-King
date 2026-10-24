@@ -4,7 +4,17 @@
 
 [返回首页](../README.md) · [文档中心](README.md) · [图文上手](QUICKSTART.md) · [AI 配置指南](AI-SETUP.md) · [数据与隐私](PRIVACY.md)
 
-## 2.6.0 新功能
+## 2.6.1 安卓更新提醒
+
+### 旧安卓用户会直接收到这次提醒吗？
+
+2.6.0 及更早安卓试用包存在试用文件名匹配问题，需要先[手动下载 2.6.1](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/Offer-King-2.6.1-android-trial.apk)，覆盖升级一次。之后可在“帮助与关于 → 应用更新”检查更高版本的官方安卓候选试用包。自动检查仅在应用前台运行，每天最多一次；关闭候选提醒、关闭自动检查或忽略某版本后，会遵循你的选择。不会自动下载或安装。
+
+### 覆盖升级会保留记录和 AI 配置吗？
+
+2.6.1 沿用 2.6.0 的应用身份、开发测试签名、数据存储与 AI 加密配置，设计为正常覆盖更新时保留原记录和配置。先在旧版导出 JSON 并另存附件原文件，再安装官方 APK、选择“更新”；不要卸载、清除数据或重置 AI。若提示签名不兼容，停止并反馈。JSON 不含 API Key 或附件文件，不能靠它恢复这些内容。**真机首装、覆盖安装和升级后 Keystore 可用性尚未验收**，不能保证每款手机的表现。[完整升级说明](DOWNLOAD.md#已有记录先备份再升级)
+
+## 2.6.0 日常效率功能
 
 ### 快速查找和保存视图需要 AI 吗？
 
@@ -18,11 +28,11 @@
 
 ### 我应该下载哪个文件？
 
-可以[直接下载 Windows 2.6.0 候选试用包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)，也可以在 [2.6.0 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0) 的 **Assets** 中选择 `Offer-King-Setup-2.6.0.exe`。安卓用户可在同一发布页选择 `Offer-King-2.6.0-android-trial.apk`；它带 Debug 签名，不是 Windows 文件。GitHub 的 `Source code` 压缩包不是应用安装包。安装前请看下方安全提醒并核对 [SHA-256](QUICKSTART.md#安装前先核对)。[历史 2.3.0 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.3.0) 仍保留。
+Windows 继续[下载 2.6.0 候选试用包](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)；本轮没有重新发布 Windows 文件。安卓请[下载 2.6.1 候选试用 APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/Offer-King-2.6.1-android-trial.apk)，它带开发测试签名。对应发布页的 **Assets** 提供 `START-HERE.md` 和校验文件。GitHub 的 `Source code` 压缩包不是安装包。[按平台下载与校验](DOWNLOAD.md)
 
 ### 为什么标记为候选试用版？
 
-2.6.0 在 GitHub 标记为 **Pre-release**，已有开发版与打包程序的自动化回归，但**真实干净 Windows 首装、覆盖安装和卸载尚未执行**。选择跳过这些验收不等于通过。愿意接受此候选范围再下载，旧用户先手动导出备份。GitHub 的 Latest 可能仍指向其他版本，请使用这里的固定 2.6.0 链接。
+安卓 2.6.1 和 Windows 2.6.0 均标记为 **Pre-release**。已有自动化、构建及静态检查，但**安卓真机首装、覆盖安装、浏览器交接与 Keystore 升级后可用性，以及真实 Windows 首装／覆盖／卸载仍未验收**。愿意接受此候选范围再下载，旧用户先导出备份。GitHub 的 Latest 可能仍指向其他版本，请按平台使用固定下载链接。[本轮已测与未测](RELEASE-2.6.1.md#已验证与尚未验收)
 
 ### 下载后能直接使用吗？需要懂编程吗？
 
@@ -50,9 +60,9 @@
 
 ### 有自动更新或新版本推送吗？GitHub 订阅会在 App 内提醒吗？
 
-Windows 2.6.0 有**前台新版提醒**：启动及使用期间自动检查每天最多一次，可手动检查、忽略或关闭；只打开固定官方发布页，不自动下载或安装。2.4.0 及更早公开版本需先手动升级一次。安卓 Debug 包不作为正式自动升级资产推荐；GitHub Watch 仍是 GitHub／邮箱通知。真实安装器覆盖升级未验收。
+Windows 2.6.0 与安卓 2.6.1 有**前台新版提醒**：“帮助与关于 → 应用更新”可手动检查，自动检查每天最多一次，支持候选版开关和忽略版本；只打开固定官方发布页，不自动下载或安装。Windows 2.4.0 及更早公开版本、安卓 2.6.0 及更早试用包都需先手动升级一次。安卓只有接受候选提醒时才推荐试用 APK。GitHub Watch 仍是 GitHub／邮箱通知，不等于 App 内提醒。真实安装器及手机覆盖升级未验收。
 
-更新前务必手动导出 JSON、关闭旧版、保留原安装位置，不要先清空数据。更新后检查公司、岗位、薪酬和配置；不要马上丢弃升级前的备份。
+更新前务必导出 JSON 并另存附件原文件。Windows 关闭旧版并保留原安装位置；安卓在官方 APK 安装界面选择“更新”。不要先卸载或清空数据；更新后检查公司、岗位、薪酬、附件与 AI 配置状态，继续保留升级前的备份。更新检查不调用 AI，也不会读取或重置 AI 密钥。
 
 ### 为什么部分文件名还是旧名称？
 

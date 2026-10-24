@@ -12,23 +12,23 @@
 
 [简体中文](README.md) · [English](docs/i18n/en/README.md) · [日本語](docs/i18n/ja/README.md) · [한국어](docs/i18n/ko/README.md)
 
-**[↓ Windows 2.6.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)**　·　**[↓ 安卓试用 APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-2.6.0-android-trial.apk)**　·　[下载与校验](docs/DOWNLOAD.md)　·　[文档中心](docs/README.md)
+**[↓ Windows 2.6.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)**　·　**[↓ 安卓 2.6.1 试用 APK](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/Offer-King-2.6.1-android-trial.apk)**　·　[下载与校验](docs/DOWNLOAD.md)　·　[文档中心](docs/README.md)
 
 [下载与版本](#下载与版本) · [快速开始](#快速开始) · [主要功能](#符合你的求职节奏) · [界面预览](#界面预览) · [AI 配置](#ai-配置) · [常见问题](#常见问题) · [反馈](#反馈与参与)
 
 </div>
 
 > [!IMPORTANT]
-> **2.6.0 是候选试用版（Pre-release），不是已验收正式版。** Windows 未正式签名；安卓使用 Debug 开发测试签名。真实 Windows 首装／覆盖／卸载、安卓真机安装／覆盖／使用尚未验收。升级先导出备份，签名冲突不要直接卸载，不要关闭安全防护。[已测与未测事项](docs/RELEASE-2.6.0.md#已验证与尚未验收)
+> **Android 2.6.1 / Windows 2.6.0 均为候选试用版（Pre-release）。** Windows 未正式签名；安卓使用 Debug 开发测试签名。真实 Windows 首装／覆盖／卸载、安卓真机首装／覆盖／使用及升级后 AI 解密尚未验收。升级先导出备份，签名冲突不要直接卸载，不要关闭安全防护。[安卓已测与未测](docs/RELEASE-2.6.1.md#已验证与尚未验收) · [Windows 原范围](docs/RELEASE-2.6.0.md#已验证与尚未验收)
 
 ## 下载与版本
 
-| 你的设备 | 下载 2.6.0 | 试用边界 |
+| 你的设备 | 当前固定下载 | 试用边界 |
 | --- | --- | --- |
 | Windows 10 / 11 x64 | [Windows 安装包 .exe](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe) | 未正式数字签名（NotSigned）；NSIS 安装包 |
-| Android | [安卓试用包 .apk](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-2.6.0-android-trial.apk) | Debug 签名；手机实际兼容性待验收 |
+| Android | [安卓 2.6.1 试用包 .apk](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/Offer-King-2.6.1-android-trial.apk) | Debug 签名；真机首装／覆盖未验收 |
 
-[固定候选发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0) · [文件校验清单](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/SHA256SUMS.txt) · [可离线阅读的指南](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/START-HERE.md)
+[安卓 2.6.1 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.1) · [安卓校验与指南](docs/DOWNLOAD.md) · [Windows 2.6.0 发布页](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.0)
 
 **下载不需要 GitHub 登录，也不需要开发工具。** 不设试用期限，不人为限制本地功能；AI 服务可能收费。系统要求、升级顺序及 SHA-256 见[下载中心](docs/DOWNLOAD.md)。
 
@@ -97,6 +97,12 @@
 
 语言截图来自 2.3.0 打包候选程序，使用合成资料并阻断外网。公司与岗位保持原文；切换界面语言不会翻译用户内容。所有图片均标注真实来源版本，**不冒充 2.6.0 或安卓安装实拍**。
 
+## 安卓 2.6.1：在 App 内发现后续新版
+
+修复试用 APK 的版本识别，支持前台自动提醒、手动检查，以及打开对应官方发布页下载；也改善深色模式更新卡片的可读性。**安卓 2.6.0 及更早试用用户须先手动覆盖升级到 2.6.1 一次。** 之后在“帮助与关于 → 应用更新”允许候选版提醒，才能发现后续更高版本，不会自动下载或安装。
+
+沿用 2.6.0 的应用身份与开发签名，覆盖更新设计为保留记录和 AI 配置。先导出备份，再选择“更新”，不要先卸载、清除数据或重置 AI；JSON 不含密钥和附件文件。**真机首装、覆盖安装及升级后 AI 密钥解密尚未验收。** [本版完整说明](docs/RELEASE-2.6.1.md) · [覆盖升级步骤](docs/DOWNLOAD.md#已有记录先备份再升级)
+
 ## 2.6.0：找得快、看得全、跟得上
 
 - **快速查找：** 点击顶部查找按钮或按 `Ctrl+K`，搜索本机公司、岗位、城市、技能、阶段和页面；支持多关键词与键盘选择，不调用 AI。
@@ -105,7 +111,7 @@
 - **更轻松地安排下一步：** 从首页、看板或全部待办打开快速跟进，选择明天、下周或自定义时间，明确保存后写入流程，不改求职阶段。
 - **首页与详情更好读：** 待办优先、长表单按需展开；优化小窗口、手机、大字号及输入法操作。[本版完整说明](docs/RELEASE-2.6.0.md) · [操作指南](docs/QUICKSTART.md#260-日常效率工具) · [版本历史](CHANGELOG.md)
 
-本轮新工具都在本机运行。AI 提供商和费用策略沿用原配置；常用视图只保存在当前设备，不进入求职 JSON 备份。Windows 2.5.4 起支持前台版本提醒，包含候选版的渠道才会提示本版，仍需自己下载和安装。安卓 Debug 包通过发布页手动下载。
+这些日常工具继续保留。AI 提供商和费用策略沿用原配置；常用视图只保存在当前设备，不进入求职 JSON 备份。Windows 当前安装包仍为 2.6.0，2.5.4 起支持前台版本提醒。安卓当前为 2.6.1，修复试用包识别；两端均需自行下载、安装，检查版本不调用 AI。
 
 ## AI 配置
 
@@ -144,7 +150,7 @@
 <details>
 <summary><strong>为什么没有自动升级？怎样收到新版本消息？</strong></summary>
 
-Windows 2.5.4 起已有前台版本检查；允许候选版本、且找到适配文件时才会提示 2.6.0，仍需自行备份、下载与安装。旧 2.4.0 及更早版本先手动升一次；安卓 Debug 不作为正式升级渠道。也可在 GitHub Watch 中只订阅 Releases，但 GitHub 通知不等于 App 内推送。
+Windows 2.5.4 起已有前台版本检查，当前下载仍为 2.6.0；旧 2.4.0 及更早版本需先手动升级。安卓 2.6.1 起识别官方试用 APK，2.6.0 及更早安卓试用版需先手动覆盖一次。允许候选提醒、网络可达且存在更高版本的适配文件时，App 才会提醒并打开发布页；仍需自行备份、下载与安装。GitHub Watch 是 GitHub／邮箱通知，不是给所有旧 App 远程推送功能。
 
 </details>
 
@@ -173,4 +179,4 @@ Issues 对所有人公开。请打码，不要上传密钥、完整备份、真�
 
 [文档中心](docs/README.md) · [所有版本](https://github.com/YCC-Lover/Offer-King/releases) · [后续方向](ROADMAP.md) · [使用许可](LICENSE.md) · [第三方声明](THIRD-PARTY-NOTICES.txt)
 
-本仓库提供下载、文档和反馈渠道。**Offer King 为闭源软件，应用源码不在本仓库公开。** 当前候选 2.6.0；文档更新：2026-10-23。
+本仓库提供下载、文档和反馈渠道。**Offer King 为闭源软件，应用源码不在本仓库公开。** 当前候选：Android 2.6.1、Windows 2.6.0；文档更新：2026-10-24。

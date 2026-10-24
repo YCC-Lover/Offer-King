@@ -12,14 +12,14 @@ A local-first job-search companion: follow up on applications, compare offers, a
 
 [简体中文](../../../README.md) · **English** · [日本語](../ja/README.md) · [한국어](../ko/README.md)
 
-**[Download Windows 2.6.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Download Android 2.6.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-2.6.0-android-trial.apk)**
+**[Download Windows 2.6.0](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.0/Offer-King-Setup-2.6.0.exe)** · **[Download Android 2.6.1](https://github.com/YCC-Lover/Offer-King/releases/download/v2.6.1/Offer-King-2.6.1-android-trial.apk)**
 
-[Download & verification guide](DOWNLOAD.md) · [AI setup](AI-SETUP.md) · [Release notes](../../RELEASE-2.6.0.md)
+[Download & verification guide](DOWNLOAD.md) · [AI setup](AI-SETUP.md) · [Android 2.6.1 release notes](../../RELEASE-2.6.1.md)
 
 </div>
 
 > [!IMPORTANT]
-> **2.6.0 is a trial candidate (Pre-release), not a production release.** Windows is **NotSigned**; Android has a **Debug development/test signature**, not a production identity.
+> **Android 2.6.1 and Windows 2.6.0 are trial candidates (Pre-release), not production releases.** This update is Android-only; Windows stays at 2.6.0. Windows is **NotSigned**; Android has a **Debug development/test signature**, not a production identity.
 > Windows clean/upgrade installation and uninstallation, and Android real-device installation, upgrade and runtime use, **have not completed acceptance testing**. Export a backup before upgrading; if Android reports a signature conflict, stop rather than uninstalling your existing app.
 > No macOS, iOS or Linux installer is available.
 
@@ -68,7 +68,16 @@ This older Chinese-interface screenshot shows the board layout with synthetic da
 
 </details>
 
-## What is new in the 2.6.0 trial?
+## New in the Android 2.6.1 trial
+
+- **Check for future trial updates inside the app.** Help & about → App updates supports manual checks and automatic foreground checks at most once per 24 hours when enabled. Include candidate releases must be on, and ignored-version preferences still apply. A notice opens the official release page; you choose whether to download and install.
+- **Upgrade once manually from 2.6.0 or earlier.** Those Android trial builds do not recognize trial APK filenames. Install 2.6.1 over the existing app to gain the corrected checker; no remote change can add it to an old APK.
+- **Keep the existing installation.** The app ID, data origin, AI storage and 2.6.0 Debug signer are retained by design. Export JSON outside the app first, keep attachments separately, and do not uninstall, clear data or reset AI settings. JSON excludes keys and attachment files. Real-phone first installation, in-place upgrade and encrypted-key retention remain unaccepted; stop if the signature conflicts.
+- **Read update notices in dark mode.** The update card has clearer text contrast. Checking releases does not use AI, send your records or keys, or incur AI charges; AI configuration and routes are unchanged.
+
+[Android 2.6.1 release](https://github.com/YCC-Lover/Offer-King/releases/tag/v2.6.1) · [Upgrade instructions](DOWNLOAD.md#trying-or-upgrading-android)
+
+## Retained from the 2.6.0 trial
 
 - **Find the next record faster.** Open local quick find from the header or with `Ctrl/Cmd + K`; search pages, companies and jobs, then navigate with the keyboard.
 - **Work in a board or a list.** Switch views, combine six filters (stage, priority, city, work mode, favorites and reminders), sort, and save up to **12 named views**. Lists show **30 records per page**; views store presentation preferences, not copies of your records or search text.
@@ -123,7 +132,7 @@ Cloud extraction sends pasted text to your selected model. The full paste is mem
 <details>
 <summary><strong>How do I update? Which platforms and languages are available?</strong></summary>
 
-Windows can check releases while open and in the foreground, manually or once daily when enabled; it **never downloads or installs automatically**. Enable **Include candidate releases** to be offered 2.6.0. Versions 2.4.0 and earlier need a manual upgrade before gaining these notifications. Follow the download guide manually for Android Debug; it is not a production upgrade channel. Stop on a signature conflict rather than deleting existing data.
+Windows 2.5.4 and later can check releases while open and foregrounded, manually or once per 24 hours automatically when enabled; enable **Include candidate releases** for Windows 2.6.0. Windows 2.4.0 and earlier need a manual upgrade first. **Android trial 2.6.0 and earlier also need one manual upgrade to 2.6.1** to recognize future official trial APKs. From 2.6.1, use Help & about → App updates and enable candidate releases; disabled automatic checks and ignored versions are respected. Notices open the official release page and **never download or install automatically**. Stop on a signature conflict rather than deleting existing data. [Backup and upgrade guide](DOWNLOAD.md)
 
 The published trial covers Windows 10 / 11 x64 and Android 7.0+ with Simplified Chinese, English, Japanese and Korean UI. Real-device acceptance remains pending. No macOS/iOS/Linux installer or portable edition is available. The 1100 × 700 minimum window is Windows-only, not an Android requirement.
 
@@ -143,4 +152,4 @@ If it helps your search, Star the [project](https://github.com/YCC-Lover/Offer-K
 
 [Chinese documentation hub](../../README.md) · [All releases](https://github.com/YCC-Lover/Offer-King/releases) · [License](../../../LICENSE.md) · [Third-party notices](../../../THIRD-PARTY-NOTICES.txt)
 
-Offer King is closed-source software. This public repository provides downloads, documentation and feedback channels, not the application source code. Documentation updated **2026-10-23**.
+Offer King is closed-source software. This public repository provides downloads, documentation and feedback channels, not the application source code. Documentation updated **2026-10-24**.
